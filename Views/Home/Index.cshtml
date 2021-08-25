@@ -1,0 +1,157 @@
+﻿@{
+    var error = ViewData["error"] as string;
+    Layout = "";
+}
+
+@*
+@if(error != null)
+			{
+				<div class="alert-danger">
+					@error
+				</div>
+			}*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="~/Font-Awesome-4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/templatemo-style.css">
+    <style>
+        *{
+            font-family: "Cairo", sans-serif;
+            font-weight: 900!important;
+        }
+        .tm-float-section-header, button, .tm-pink-border-bl, .tm-gray-border-br, .tm-gray-border-tl, .tm-pink-border-tr{
+            border: 10px solid pink!important;
+            background:#f592b1!important;
+            font-weight: 900!important;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <section class="col-md-12 content row" id="home">
+           <div class="col-lg-6 col-md-6 content-item tm-black-translucent-bg tm-logo-box">
+              <img src="~/images/spatulapng.png"/>
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background tm-white-translucent-bg" style="text-align:center;">
+               <h2 class="main-title text-center dark-blue-text">نبذة عنا</h2>
+               <p>بدأنا من 5 سنوات من خلال تجهيز كورسات تعليم الكيك و الحلا اون لاين عن طريق قروبات الفيس بوك و بعد نجاحنا لاحظنا وجود مشاكل في طريقة التعلم و طريقة تحصيل الارباح جعلتنا نفكر جديا في انشاء تطبيق متخصص فقط في مجال الكيك والحلويات يلبي احتياجات المتدربات بسهولة ويسر و قد تحصلنا على دورة استثمار مكنتنا من تسجيل شركتنا رسميا و ها نحن الان وبرفقتنا 115 الف متابعة.</p>               
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding tm-equal-col-container row" id="services">
+        <div class="col-lg-6 col-md-6 col-sm-12 content-item tm-black-translucent-bg tm-services-section-padding">
+          <h2 class="main-title text-center dark-blue-text">المسيرة</h2>
+           <p>هذا فيديو مهم يوضح مسيرتي في تعليم النساء في بلدي خبز وتزيين الكيك بالإضافة الى مساعدتهم في فتح مشروع والتسويق له اون لاين
+هده مداخلة برعاية اكسبرتيز فرانس مدعوم من الاتحاد الأوروبي
+وهي مداخلة موثقة في موقعهم الرسمي</p>
+@*           <button type="button" class="btn btn-big pull-right tm-btn-primary">قراءة المزيد</button>
+*@       </div>
+       <div class="col-lg-6 col-md-6 col-sm-12 tm-white-translucent-bg tm-services-section-padding tm-box-center">
+           <video src="~/videos/intro.mp4" controls> 
+               
+           </video>
+                               
+       </div>
+
+      </section>
+
+     @* <section class="col-md-12 content padding tm-float-section tm-section-3 row">
+
+      <div class="col-lg-6 col-md-6 content-item tm-black-translucent-bg"></div>
+      <div class="col-lg-6 col-md-6 content-item tm-white-translucent-bg"></div>
+      
+      <div class="tm-float-section-header">
+        <h2 class="text-center tm-white-text tm-section-3-header">.03 Morbi vehicula suscipit</h2>  
+      </div>
+
+      <div class="tm-float-section-body tm-white-bg">
+        <div class="col-lg-12 row">
+          <div class="col-md-4 col-lg-4">
+            <i class="fa fa-commenting-o fa-4x tm-fa-icon"></i>
+            <p>Curabitur ornare pulvinar sapien, accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <i class="fa fa-code fa-4x tm-fa-icon"></i>
+            <p>Curabitur ornare pulvinar sapien, accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <i class="fa fa-inbox fa-4x tm-fa-icon"></i>
+            <p>Curabitur ornare pulvinar sapien, accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+          </div>
+        </div>
+      </div>
+        
+      </section>
+*@
+   <section class="col-md-12 content row" id="contact" style="direction:rtl;">
+       <div class="col-lg-6 col-md-6 content-item tm-content-box tm-black-translucent-bg">
+           <h2 class="contact-title" style="text-align:center;">بيانات التواصل</h2>
+           <p style="text-align:right;">يمكنكم التواصل معنا عن طريق الوسائل المذكورة ادناه:</p>
+           <p style="text-align:right;">
+               عنوان الشركة : ليبيا طرابلس جنزور منطقة السياح <br />
+              رقم الهاتف و الواتس اب : 0945367550<br/>
+             البريد الالكتروني: contact@spatulagroup.com
+           </p>
+       </div>
+       <div class="col-lg-6 col-md-6 content-item tm-content-box tm-white-translucent-bg">
+           
+           <form name="contact-form" class="contact-form">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="الإسم" required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="البريد الإلكتروني" required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="الرسالة" required></textarea>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group margin-b-0">
+                    <button type="submit" id="form-submit" class="btn pull-right btn-contact tm-btn-primary">إرسال</button>
+                </div>    
+            </div>
+        </form>
+      
+    </div>
+
+</section>
+
+</div>
+
+<style>
+    .footer{
+  background: -moz-linear-gradient(#00000000,#44444499);
+  background: -o-linear-gradient(#00000000,#44444499);
+  background: -webkit-linear-gradient(#00000000,#44444499);
+  font-weight: 900!important;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 22px;
+}
+</style>
+
+<div class="text-center footer">
+	<div class="container" style="direction:rtl;">
+		&copy; <span class="tm-current-year">2021</span> -  جميع الحقوق محفوظة للشيف حنان 
+    </div>
+</div>
+
+</body>
+</html>

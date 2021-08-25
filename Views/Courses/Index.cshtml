@@ -1,0 +1,96 @@
+﻿@model IEnumerable<SpatulaApi.Data.Course>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    h1,.btn{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+.table{
+  direction: rtl;
+}
+</style>
+<h1>قائمة الكورسات</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">إضافة جديد</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Featured)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+          
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+
+        <tr class="@(!item.Status?"alert-danger":null)">
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                    @if(item.Cost == 0)
+                    {
+                        <p>مجاني</p>
+                    }
+                    else
+                    {
+                        <p>@item.Cost</p>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @if(item.Featured == true)
+                {
+                        <p>مميز</p>
+                    }
+                    else
+                    {
+                        <p>عادي</p>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.ArabicName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">تعديل</a>
+                </td><td>
+                <a asp-action="Details" asp-route-id="@item.Id">عرض التفاصيل</a> 
+                </td><td>
+               
+            <a asp-action="Delete" asp-route-id="@item.Id">مسح</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

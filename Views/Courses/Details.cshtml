@@ -1,0 +1,116 @@
+﻿@model SpatulaApi.Data.Course
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    .course-images img{
+  margin: 0 auto;
+  width: 50%;
+}
+.course-images{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  float: right;
+}
+
+</style>
+
+<h1>تفاصيل الكورس</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Picture != null)
+			{ 
+				var pictures = Model.Picture.Split(",");
+            
+            @foreach (var pic in pictures)
+			{
+                <div class="course-images">
+                <img src="~/images/@Model.Id/@pic"/>
+                <a asp-action="DeleteImage" asp-route-id="@pic" asp-route-courseid="@Model.Id">Delete image</a>
+                </div>
+			}
+				}
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+        <dd class = "col-sm-10">
+               @if(Model.Cost == 0)
+                    {
+                        <p>مجاني</p>
+                    }
+                    else
+                    {
+                        <p>@Model.Cost</p>
+                }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Featured)
+        </dt>
+        <dd class = "col-sm-10">
+            @if(Model.Featured == true)
+                {
+                        <p>مميز</p>
+                    }
+                    else
+                    {
+                        <p>عادي</p>
+                }
+        </dd>
+       
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UpdatedDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category.ArabicName)
+        </dd>
+        
+    </dl>
+</div>
+
+<div class="course-lessons">
+    
+
+</div>
+
+
+
+<div>
+    <a asp-action="AddLesson" asp-route-id="@Model.Id" class="btn btn-primary">إضافة درس</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">تعديل</a> 
+    <a asp-action="Index" class="btn btn-outline-success">العودة الى قائمة الكورسات</a>
+</div>

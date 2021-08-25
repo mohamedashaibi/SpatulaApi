@@ -1,0 +1,67 @@
+﻿@model IEnumerable<SpatulaApi.Data.UserCourse>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+	h1,.btn{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+.table{
+  direction: rtl;
+}
+</style>
+<h1>قائمة دروس المستخدمين</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">إضافة جديد</a>
+</p>
+<table class="table">
+    <thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.AddedDate)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.User)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Course)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.LessonReached)
+			</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.AddedDate)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.User.Email)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Course.Name)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.LessonReached.Order)
+			</td>
+			<td>
+                <a asp-action="Edit" asp-route-id="@item.Id">تعديل</a>
+                </td><td>
+                <a asp-action="Details" asp-route-id="@item.Id">عرض التفاصيل</a> 
+                </td><td>
+               
+            <a asp-action="Delete" asp-route-id="@item.Id">مسح</a>
+            </td>
+		</tr>
+}
+    </tbody>
+</table>

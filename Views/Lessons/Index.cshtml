@@ -1,0 +1,99 @@
+﻿@model IEnumerable<SpatulaApi.Data.Lesson>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+h1,.btn{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+.table{
+  direction: rtl;
+}    
+
+</style>
+
+<h1>الدروس</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EnglishName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArabicName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Utensils)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ingredients)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VideoUrl)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="@(!item.Status?"alert-danger":null)">
+            <td>
+                @Html.DisplayFor(modelItem => item.EnglishName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArabicName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Utensils)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VideoUrl)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Order)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">تعديل</a>
+                </td><td>
+                <a asp-action="Details" asp-route-id="@item.Id">عرض التفاصيل</a> 
+                </td><td>
+               
+            <a asp-action="Delete" asp-route-id="@item.Id">مسح</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

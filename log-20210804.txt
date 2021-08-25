@@ -1,0 +1,831 @@
+2021-08-04 14:23:40.083 +02:00 [INF] Application started
+2021-08-04 14:23:48.557 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 14:23:53.939 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 14:23:53.940 +02:00 [INF] Hosting environment: Development
+2021-08-04 14:23:53.940 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 14:23:54.045 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 14:23:54.045 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 14:23:54.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 421.1232ms
+2021-08-04 14:23:54.556 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 14:23:54.640 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 14:23:54.641 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 85.1992ms
+2021-08-04 14:23:54.713 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 14:23:54.757 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-08-04 14:23:54.760 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-08-04 14:23:54.761 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 3.7387ms
+2021-08-04 14:23:54.793 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 14:23:54.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 14:23:54.987 +02:00 [INF] Executed ViewResult - view Index executed in 219.5058ms.
+2021-08-04 14:23:54.992 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 276.606ms
+2021-08-04 14:23:55.000 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 962.4516ms
+2021-08-04 14:23:55.172 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 307.6894ms
+2021-08-04 14:24:13.699 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52
+2021-08-04 14:24:13.707 +02:00 [INF] CORS policy execution successful.
+2021-08-04 14:24:13.790 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 14:24:17.983 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 14:24:28.102 +02:00 [INF] Executed DbCommand (170ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 14:24:28.629 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-08-04 14:24:28.857 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 14:24:29.437 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Models.AuthUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 14:24:29.543 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Login (SpatulaApi) in 15752.6255ms
+2021-08-04 14:24:29.561 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52 - 202 644 application/json;+charset=utf-8 15862.0415ms
+2021-08-04 14:42:55.961 +02:00 [INF] Application started
+2021-08-04 14:42:58.696 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 14:42:59.607 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 14:42:59.608 +02:00 [INF] Hosting environment: Development
+2021-08-04 14:42:59.608 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 14:42:59.707 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 14:42:59.999 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 295.7002ms
+2021-08-04 14:43:00.079 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 14:43:00.137 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 14:43:00.184 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 14:43:00.184 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 104.8119ms
+2021-08-04 14:43:00.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-08-04 14:43:00.328 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-08-04 14:43:00.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 3.5395ms
+2021-08-04 14:43:00.438 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 14:43:00.707 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 14:43:00.761 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 14:43:00.765 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 326.5579ms
+2021-08-04 14:43:00.902 +02:00 [INF] Executed ViewResult - view Index executed in 155.3396ms.
+2021-08-04 14:43:00.905 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 197.2134ms
+2021-08-04 14:43:00.912 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 800.4687ms
+2021-08-04 14:43:10.790 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52
+2021-08-04 14:43:10.797 +02:00 [INF] CORS policy execution successful.
+2021-08-04 14:43:10.849 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 14:43:13.648 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 14:43:19.577 +02:00 [INF] Executed DbCommand (119ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 14:43:19.948 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-08-04 14:43:20.124 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 14:43:20.339 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Models.AuthUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 14:43:20.445 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Login (SpatulaApi) in 9595.0661ms
+2021-08-04 14:43:20.461 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52 - 202 644 application/json;+charset=utf-8 9671.8044ms
+2021-08-04 14:44:18.574 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:44:18.612 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-08-04 14:44:18.626 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:44:18.642 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 66.6974ms
+2021-08-04 14:44:30.188 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:44:30.352 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:44:30.469 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:44:30.470 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-08-04 14:44:30.480 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:44:30.484 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 295.6402ms
+2021-08-04 14:44:47.111 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:44:47.113 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:44:47.114 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:44:47.115 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-08-04 14:44:47.115 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:44:47.118 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 6.6622ms
+2021-08-04 14:45:32.111 +02:00 [INF] Application started
+2021-08-04 14:45:34.804 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 14:45:35.612 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 14:45:35.612 +02:00 [INF] Hosting environment: Development
+2021-08-04 14:45:35.612 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 14:45:35.708 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 14:45:36.036 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 335.7557ms
+2021-08-04 14:45:36.416 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 14:45:36.719 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.1966ms
+2021-08-04 14:45:38.358 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 14:45:38.754 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 14:45:38.794 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 14:45:38.915 +02:00 [INF] Executed ViewResult - view Index executed in 124.4587ms.
+2021-08-04 14:45:38.918 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 163.0514ms
+2021-08-04 14:45:38.923 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 564.4905ms
+2021-08-04 14:46:27.534 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52
+2021-08-04 14:46:27.547 +02:00 [INF] CORS policy execution successful.
+2021-08-04 14:46:27.635 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 14:46:30.658 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 14:46:33.148 +02:00 [INF] Executed DbCommand (403ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 14:46:33.538 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-08-04 14:46:33.785 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 14:46:34.038 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Models.AuthUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 14:46:34.131 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Login (SpatulaApi) in 6496.0614ms
+2021-08-04 14:46:34.145 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52 - 202 644 application/json;+charset=utf-8 6611.8691ms
+2021-08-04 14:47:02.113 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:47:02.230 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:47:02.302 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:47:02.338 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:47:02.356 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:47:02.370 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 257.0165ms
+2021-08-04 14:49:51.967 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories/1 - -
+2021-08-04 14:49:51.977 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:49:51.977 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:49:51.980 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-08-04 14:49:51.980 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:49:51.983 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories/1 - - - 401 - - 19.6175ms
+2021-08-04 14:51:09.286 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 53
+2021-08-04 14:51:09.293 +02:00 [INF] CORS policy execution successful.
+2021-08-04 14:51:09.297 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 14:51:09.386 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 14:51:09.409 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 14:51:09.439 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-08-04 14:51:09.461 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 14:51:09.463 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Models.AuthUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 14:51:09.464 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Login (SpatulaApi) in 166.8047ms
+2021-08-04 14:51:09.465 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 53 - 202 659 application/json;+charset=utf-8 178.7859ms
+2021-08-04 14:51:26.480 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories/1 - -
+2021-08-04 14:51:26.482 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:51:26.482 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:51:26.483 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-08-04 14:51:26.484 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:51:26.486 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories/1 - - - 401 - - 5.9980ms
+2021-08-04 14:51:32.381 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:51:32.383 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:51:32.383 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:51:32.384 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:51:32.384 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:51:32.393 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 11.9303ms
+2021-08-04 14:51:34.741 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:51:34.743 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:51:34.743 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:51:34.747 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:51:34.748 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:51:34.751 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 10.0850ms
+2021-08-04 14:51:43.971 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:51:43.973 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:51:43.973 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:51:43.974 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:51:43.974 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:51:43.977 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 6.4792ms
+2021-08-04 14:52:09.134 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:52:09.141 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:52:09.141 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:52:09.142 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:52:09.142 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:52:09.143 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 9.3143ms
+2021-08-04 14:52:10.039 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:52:10.040 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:52:10.041 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:52:10.041 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:52:10.041 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:52:10.050 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 11.0822ms
+2021-08-04 14:52:11.462 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:52:11.463 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:52:11.464 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:52:11.464 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:52:11.464 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:52:11.466 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 4.0086ms
+2021-08-04 14:52:52.120 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Categories - -
+2021-08-04 14:52:52.120 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:52:52.120 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:52:52.122 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Categories - - - 401 - - 1.8862ms
+2021-08-04 14:52:55.858 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Categories - -
+2021-08-04 14:52:55.863 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:52:55.863 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:52:55.864 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Categories - - - 401 - - 6.2750ms
+2021-08-04 14:53:39.013 +02:00 [INF] Application started
+2021-08-04 14:53:40.664 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 14:53:41.212 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 14:53:41.212 +02:00 [INF] Hosting environment: Development
+2021-08-04 14:53:41.212 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 14:53:41.302 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 14:53:41.528 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 229.8292ms
+2021-08-04 14:53:41.945 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 14:53:42.192 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.4901ms
+2021-08-04 14:53:46.124 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 14:53:46.495 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 14:53:46.545 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 14:53:46.696 +02:00 [INF] Executed ViewResult - view Index executed in 161.8304ms.
+2021-08-04 14:53:46.699 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 202.5041ms
+2021-08-04 14:53:46.706 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 581.2322ms
+2021-08-04 14:54:56.920 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/account/facebooklogin?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - -
+2021-08-04 14:54:57.258 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:54:57.345 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:54:57.394 +02:00 [INF] Route matched with {action = "LoginFacebook", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginFacebook(System.String) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 14:54:58.154 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-08-04 14:54:58.158 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-08-04 14:54:59.005 +02:00 [INF] Received HTTP response headers after 838.2332ms - 200
+2021-08-04 14:54:59.008 +02:00 [INF] End processing HTTP request after 855.7418ms - 200
+2021-08-04 14:54:59.239 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-08-04 14:54:59.239 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-08-04 14:54:59.381 +02:00 [INF] Received HTTP response headers after 141.3563ms - 200
+2021-08-04 14:54:59.381 +02:00 [INF] End processing HTTP request after 141.9605ms - 200
+2021-08-04 14:55:01.198 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 14:55:03.293 +02:00 [INF] Executed DbCommand (373ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-08-04 14:55:03.638 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-08-04 14:55:03.857 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 14:55:03.953 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Data.ApiUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 14:55:04.078 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi) in 6683.9183ms
+2021-08-04 14:55:04.095 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/account/facebooklogin?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - - - 202 1056 application/json;+charset=utf-8 7174.8512ms
+2021-08-04 14:55:48.018 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:55:48.032 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:55:48.032 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:55:48.047 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:55:48.070 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:55:48.075 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 57.7756ms
+2021-08-04 14:55:56.113 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:55:56.114 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:55:56.115 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:55:56.123 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:55:56.124 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:55:56.127 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 13.9580ms
+2021-08-04 14:56:29.535 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 14:56:29.536 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:56:29.537 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:56:29.538 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 14:56:29.538 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:56:29.542 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 5.8952ms
+2021-08-04 14:56:35.751 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories/1 - -
+2021-08-04 14:56:35.753 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 14:56:35.753 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 14:56:35.754 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-08-04 14:56:35.754 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 14:56:35.756 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories/1 - - - 401 - - 4.8490ms
+2021-08-04 15:03:43.046 +02:00 [INF] Application started
+2021-08-04 15:03:45.846 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 15:03:47.038 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 15:03:47.039 +02:00 [INF] Hosting environment: Development
+2021-08-04 15:03:47.039 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 15:03:47.138 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 15:03:47.138 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 15:03:47.559 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 427.0930ms
+2021-08-04 15:03:47.652 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 15:03:47.717 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 15:03:47.718 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 65.4027ms
+2021-08-04 15:03:47.817 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 15:03:47.873 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 15:03:47.879 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-08-04 15:03:47.881 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-08-04 15:03:47.882 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.5515ms
+2021-08-04 15:03:47.969 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 15:03:48.100 +02:00 [INF] Executed ViewResult - view Index executed in 232.8599ms.
+2021-08-04 15:03:48.108 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 289.8019ms
+2021-08-04 15:03:48.152 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1021.3375ms
+2021-08-04 15:03:48.363 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 394.2254ms
+2021-08-04 15:04:46.009 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/register application/json-patch+json 138
+2021-08-04 15:04:46.019 +02:00 [INF] CORS policy execution successful.
+2021-08-04 15:04:46.058 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator)
+2021-08-04 15:04:46.066 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 15:04:46.069 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/register application/json-patch+json 138 - 401 - - 61.2931ms
+2021-08-04 15:05:59.429 +02:00 [INF] Application started
+2021-08-04 15:06:01.516 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 15:06:02.199 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 15:06:02.200 +02:00 [INF] Hosting environment: Development
+2021-08-04 15:06:02.200 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 15:06:02.268 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 15:06:02.268 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 15:06:02.589 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 322.6071ms
+2021-08-04 15:06:02.677 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 15:06:02.723 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 15:06:02.724 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 46.1575ms
+2021-08-04 15:06:02.754 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 15:06:02.801 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 15:06:02.909 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 15:06:02.937 +02:00 [INF] Executed ViewResult - view Index executed in 141.0546ms.
+2021-08-04 15:06:02.941 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 185.9277ms
+2021-08-04 15:06:02.947 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 684.3570ms
+2021-08-04 15:06:03.150 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 241.5561ms
+2021-08-04 15:06:51.572 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/register application/json-patch+json 134
+2021-08-04 15:06:51.583 +02:00 [INF] CORS policy execution successful.
+2021-08-04 15:06:51.651 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SpatulaApi.Models.UserDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 15:06:53.777 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 15:06:56.209 +02:00 [INF] Executed DbCommand (92ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 15:06:56.318 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-08-04 15:06:56.702 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2021-08-04 15:06:56.754 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2021-08-04 15:06:56.884 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2021-08-04 15:06:56.897 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2021-08-04 15:06:56.927 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 15:06:56.937 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-08-04 15:06:56.980 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2021-08-04 15:06:56.999 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2021-08-04 15:06:57.014 +02:00 [INF] Executing OkObjectResult, writing value of type 'SpatulaApi.Data.ApiUser'.
+2021-08-04 15:06:57.095 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Register (SpatulaApi) in 5443.9864ms
+2021-08-04 15:06:57.108 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/register application/json-patch+json 134 - 200 607 application/json;+charset=utf-8 5536.8694ms
+2021-08-04 15:07:16.354 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 53
+2021-08-04 15:07:16.355 +02:00 [INF] CORS policy execution successful.
+2021-08-04 15:07:16.368 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 15:07:16.410 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 15:07:16.413 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 15:07:16.452 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-08-04 15:07:16.526 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 15:07:16.671 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Models.AuthUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 15:07:16.679 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Login (SpatulaApi) in 311.0046ms
+2021-08-04 15:07:16.679 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 53 - 202 643 application/json;+charset=utf-8 325.0584ms
+2021-08-04 15:07:58.225 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 15:07:58.327 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 15:07:58.392 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 15:07:58.400 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 15:07:58.413 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 15:07:58.418 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 193.7579ms
+2021-08-04 15:08:14.661 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 15:08:14.662 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 15:08:14.663 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 15:08:14.664 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 15:08:14.665 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 15:08:14.672 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 11.2665ms
+2021-08-04 20:06:57.575 +02:00 [INF] Application started
+2021-08-04 20:07:00.100 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:07:01.150 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:07:01.150 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:07:01.151 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:07:01.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:07:01.256 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:08:31.403 +02:00 [INF] Application started
+2021-08-04 20:08:33.710 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:08:34.519 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:08:34.519 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:08:34.519 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:08:34.598 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:08:34.598 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:08:34.984 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 389.6376ms
+2021-08-04 20:08:35.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 20:08:35.157 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 20:08:35.158 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 74.8583ms
+2021-08-04 20:08:35.210 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 20:08:35.263 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 20:08:35.390 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 20:08:35.439 +02:00 [INF] Executed ViewResult - view Index executed in 186.2668ms.
+2021-08-04 20:08:35.444 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 232.5723ms
+2021-08-04 20:08:35.455 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 863.2200ms
+2021-08-04 20:08:35.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 332.5134ms
+2021-08-04 20:08:50.610 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52
+2021-08-04 20:08:50.618 +02:00 [INF] CORS policy execution successful.
+2021-08-04 20:08:50.677 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-08-04 20:08:53.468 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 20:08:56.421 +02:00 [INF] Executed DbCommand (127ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-08-04 20:08:56.824 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-08-04 20:08:56.994 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-08-04 20:08:57.277 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Models.AuthUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 20:08:57.381 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.Login (SpatulaApi) in 6703.4081ms
+2021-08-04 20:08:57.395 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/login application/json-patch+json 52 - 202 644 application/json;+charset=utf-8 6785.0664ms
+2021-08-04 20:09:39.977 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:09:40.140 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-08-04 20:09:40.228 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2021-08-04 20:09:40.236 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator|User)
+2021-08-04 20:09:40.248 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-08-04 20:09:40.259 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 401 - - 282.5201ms
+2021-08-04 20:09:55.528 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:09:55.562 +02:00 [INF] Successfully validated the token.
+2021-08-04 20:09:55.564 +02:00 [INF] Authorization was successful.
+2021-08-04 20:09:55.575 +02:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller SpatulaApi.Controllers.Api.CategoriesController (SpatulaApi).
+2021-08-04 20:09:55.584 +02:00 [INF] Authorization was successful.
+2021-08-04 20:10:38.046 +02:00 [INF] Application started
+2021-08-04 20:10:40.212 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:10:40.870 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:10:40.870 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:10:40.870 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:10:40.941 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:10:41.187 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 248.3280ms
+2021-08-04 20:10:41.267 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 20:10:41.314 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 20:10:41.315 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 48.3542ms
+2021-08-04 20:10:41.491 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 20:10:41.738 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.2339ms
+2021-08-04 20:10:42.263 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:10:42.639 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 20:10:42.687 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 20:10:42.802 +02:00 [INF] Executed ViewResult - view Index executed in 128.0058ms.
+2021-08-04 20:10:42.804 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 164.3143ms
+2021-08-04 20:10:42.809 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 546.5811ms
+2021-08-04 20:10:45.922 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:10:46.297 +02:00 [INF] Successfully validated the token.
+2021-08-04 20:10:46.305 +02:00 [INF] Authorization was successful.
+2021-08-04 20:10:46.334 +02:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller SpatulaApi.Controllers.Api.CategoriesController (SpatulaApi).
+2021-08-04 20:10:46.336 +02:00 [INF] Authorization was successful.
+2021-08-04 20:10:48.716 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 20:10:50.064 +02:00 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-08-04 20:10:50.276 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CategoryDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 20:10:50.495 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CategoriesController.GetAllCategories (SpatulaApi) in 4161.3561ms
+2021-08-04 20:10:50.507 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 200 443 application/json;+charset=utf-8 4585.0836ms
+2021-08-04 20:13:15.602 +02:00 [INF] Application started
+2021-08-04 20:13:18.141 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:13:18.896 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:13:18.896 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:13:18.896 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:13:18.984 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:13:18.984 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:13:19.403 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 427.1399ms
+2021-08-04 20:13:19.487 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 20:13:19.547 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 20:13:19.547 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 60.3523ms
+2021-08-04 20:13:19.611 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 20:13:19.673 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 20:13:19.808 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 20:13:19.854 +02:00 [INF] Executed ViewResult - view Index executed in 190.4673ms.
+2021-08-04 20:13:19.859 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 245.9062ms
+2021-08-04 20:13:19.873 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 898.2882ms
+2021-08-04 20:13:20.108 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 299.9927ms
+2021-08-04 20:13:22.489 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:13:22.924 +02:00 [INF] Successfully validated the token.
+2021-08-04 20:13:22.933 +02:00 [INF] Authorization was successful.
+2021-08-04 20:13:22.963 +02:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller SpatulaApi.Controllers.Api.CategoriesController (SpatulaApi).
+2021-08-04 20:13:22.965 +02:00 [INF] Authorization was successful.
+2021-08-04 20:13:25.691 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 20:13:26.924 +02:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-08-04 20:13:27.138 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CategoryDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 20:13:27.326 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CategoriesController.GetAllCategories (SpatulaApi) in 4363.3404ms
+2021-08-04 20:13:27.343 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 200 443 application/json;+charset=utf-8 4854.9165ms
+2021-08-04 20:15:25.040 +02:00 [INF] Application started
+2021-08-04 20:15:27.450 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:15:28.208 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:15:28.208 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:15:28.209 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:15:28.276 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:15:28.388 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:15:28.595 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 323.0995ms
+2021-08-04 20:15:28.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 20:15:28.792 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 20:15:28.792 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 110.2657ms
+2021-08-04 20:15:28.971 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 20:15:28.988 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 20:15:29.077 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 20:15:29.247 +02:00 [INF] Executed ViewResult - view Index executed in 192.2722ms.
+2021-08-04 20:15:29.250 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 261.1229ms
+2021-08-04 20:15:29.256 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 867.7221ms
+2021-08-04 20:15:29.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 352.5155ms
+2021-08-04 20:15:42.398 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:15:42.831 +02:00 [INF] Successfully validated the token.
+2021-08-04 20:15:42.839 +02:00 [INF] Authorization was successful.
+2021-08-04 20:15:42.879 +02:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller SpatulaApi.Controllers.Api.CategoriesController (SpatulaApi).
+2021-08-04 20:15:42.883 +02:00 [INF] Authorization was successful.
+2021-08-04 20:15:45.438 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 20:15:47.339 +02:00 [INF] Executed DbCommand (325ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-08-04 20:15:47.521 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CategoryDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 20:15:47.840 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CategoriesController.GetAllCategories (SpatulaApi) in 4960.807ms
+2021-08-04 20:15:47.854 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 200 443 application/json;+charset=utf-8 5456.2275ms
+2021-08-04 20:16:33.771 +02:00 [INF] Application started
+2021-08-04 20:16:36.162 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:16:36.914 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:16:36.915 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:16:36.915 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:16:36.996 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:16:37.201 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:16:37.284 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 291.5544ms
+2021-08-04 20:16:37.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 20:16:37.454 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 20:16:37.455 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 70.0016ms
+2021-08-04 20:16:37.550 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-08-04 20:16:37.553 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-08-04 20:16:37.553 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.7815ms
+2021-08-04 20:16:37.637 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 20:16:37.798 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 20:16:37.842 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 20:16:37.949 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 311.8643ms
+2021-08-04 20:16:38.029 +02:00 [INF] Executed ViewResult - view Index executed in 192.7223ms.
+2021-08-04 20:16:38.033 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 233.6587ms
+2021-08-04 20:16:38.041 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 840.2644ms
+2021-08-04 20:16:42.313 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:16:42.699 +02:00 [INF] Successfully validated the token.
+2021-08-04 20:16:42.708 +02:00 [INF] Authorization was successful.
+2021-08-04 20:16:42.743 +02:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller SpatulaApi.Controllers.Api.CategoriesController (SpatulaApi).
+2021-08-04 20:16:42.748 +02:00 [INF] Authorization was successful.
+2021-08-04 20:16:45.155 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 20:16:47.062 +02:00 [INF] Executed DbCommand (327ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-08-04 20:16:47.276 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CategoryDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 20:16:47.490 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CategoriesController.GetAllCategories (SpatulaApi) in 4746.4037ms
+2021-08-04 20:16:47.505 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 200 443 application/json;+charset=utf-8 5191.4324ms
+2021-08-04 20:17:47.504 +02:00 [INF] Application started
+2021-08-04 20:17:49.830 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-04 20:17:50.562 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 20:17:50.563 +02:00 [INF] Hosting environment: Development
+2021-08-04 20:17:50.563 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-08-04 20:17:50.657 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-08-04 20:17:50.922 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 272.0068ms
+2021-08-04 20:17:51.024 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-08-04 20:17:51.064 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-08-04 20:17:51.117 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-04 20:17:51.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 94.0157ms
+2021-08-04 20:17:51.253 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-08-04 20:17:51.256 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-08-04 20:17:51.256 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 3.1680ms
+2021-08-04 20:17:51.348 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-08-04 20:17:51.616 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-08-04 20:17:51.683 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 334.3619ms
+2021-08-04 20:17:51.719 +02:00 [INF] Executing ViewResult, running view Index.
+2021-08-04 20:17:51.898 +02:00 [INF] Executed ViewResult - view Index executed in 230.1167ms.
+2021-08-04 20:17:51.901 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 283.189ms
+2021-08-04 20:17:51.906 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 841.9964ms
+2021-08-04 20:17:54.485 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44345/api/categories - -
+2021-08-04 20:17:54.899 +02:00 [INF] Successfully validated the token.
+2021-08-04 20:17:54.913 +02:00 [INF] Authorization was successful.
+2021-08-04 20:17:54.960 +02:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller SpatulaApi.Controllers.Api.CategoriesController (SpatulaApi).
+2021-08-04 20:17:54.964 +02:00 [INF] Authorization was successful.
+2021-08-04 20:17:57.752 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 20:17:59.573 +02:00 [INF] Executed DbCommand (318ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-08-04 20:17:59.845 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CategoryDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-04 20:18:00.035 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CategoriesController.GetAllCategories (SpatulaApi) in 5074.3448ms
+2021-08-04 20:18:00.053 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44345/api/categories - - - 200 443 application/json;+charset=utf-8 5567.5948ms
