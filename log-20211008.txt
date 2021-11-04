@@ -1,0 +1,209 @@
+2021-10-08 16:14:27.210 +02:00 [INF] Application started
+2021-10-08 16:14:31.602 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-08 16:14:32.636 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-08 16:14:32.637 +02:00 [INF] Hosting environment: Development
+2021-10-08 16:14:32.637 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-08 16:14:32.845 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-08 16:14:32.845 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-08 16:14:33.276 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 432.2104ms
+2021-10-08 16:14:33.361 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-10-08 16:14:33.364 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui-bundle.js - -
+2021-10-08 16:14:33.364 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui-standalone-preset.js - -
+2021-10-08 16:14:33.398 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-10-08 16:14:33.398 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2021-10-08 16:14:33.402 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 37.3306ms
+2021-10-08 16:14:33.402 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 37.6261ms
+2021-10-08 16:14:33.474 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-10-08 16:14:33.481 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 200 142933 text/css 120.1145ms
+2021-10-08 16:14:33.544 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:14:33.594 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:14:33.836 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-10-08 16:14:33.844 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-10-08 16:14:33.844 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 7.7600ms
+2021-10-08 16:14:33.969 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-08 16:14:34.083 +02:00 [INF] Executed ViewResult - view Index executed in 497.2898ms.
+2021-10-08 16:14:34.086 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 541.0049ms
+2021-10-08 16:14:34.093 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1254.2437ms
+2021-10-08 16:14:34.319 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 349.7533ms
+2021-10-08 16:18:26.113 +02:00 [INF] Application started
+2021-10-08 16:18:32.565 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-08 16:18:34.452 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-08 16:18:34.452 +02:00 [INF] Hosting environment: Development
+2021-10-08 16:18:34.453 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-08 16:18:34.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-08 16:18:34.557 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-08 16:18:35.025 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 472.5089ms
+2021-10-08 16:18:35.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-10-08 16:18:35.211 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-10-08 16:18:35.212 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 56.8273ms
+2021-10-08 16:18:35.307 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:18:35.376 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-10-08 16:18:35.379 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-10-08 16:18:35.379 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.3882ms
+2021-10-08 16:18:35.389 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:18:35.503 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-08 16:18:35.812 +02:00 [INF] Executed ViewResult - view Index executed in 429.2359ms.
+2021-10-08 16:18:35.819 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 510.2697ms
+2021-10-08 16:18:35.829 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1278.9094ms
+2021-10-08 16:18:36.064 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 561.1128ms
+2021-10-08 16:18:43.044 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/reviews - -
+2021-10-08 16:18:43.226 +02:00 [INF] Route matched with {action = "Index", controller = "Reviews", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SpatulaApi.Controllers.ReviewsController (SpatulaApi).
+2021-10-08 16:18:44.281 +02:00 [INF] Executing RedirectResult, redirecting to /?error=%D9%8A%D8%AC%D8%A8%20%D8%A7%D9%86%20%D8%AA%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%88%D9%84%D8%A7.
+2021-10-08 16:18:44.282 +02:00 [INF] Executed action SpatulaApi.Controllers.ReviewsController.Index (SpatulaApi) in 1054.9161ms
+2021-10-08 16:18:44.345 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/reviews - - - 302 - - 1300.7804ms
+2021-10-08 16:18:44.405 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/?error=%D9%8A%D8%AC%D8%A8%20%D8%A7%D9%86%20%D8%AA%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%88%D9%84%D8%A7 - -
+2021-10-08 16:18:44.421 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:18:44.433 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:18:44.457 +02:00 [INF] Executed ViewResult - view Index executed in 24.5617ms.
+2021-10-08 16:18:44.458 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 36.9507ms
+2021-10-08 16:18:44.465 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/?error=%D9%8A%D8%AC%D8%A8%20%D8%A7%D9%86%20%D8%AA%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%88%D9%84%D8%A7 - - - 200 - text/html;+charset=utf-8 60.2190ms
+2021-10-08 16:18:44.622 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/site.css?v=5DNObiB6wo9fCuFRbABwIGpHU5uyOHghRti8Ux2O77M - -
+2021-10-08 16:18:44.622 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulapng.png - -
+2021-10-08 16:18:44.623 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - -
+2021-10-08 16:18:44.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - -
+2021-10-08 16:18:44.630 +02:00 [INF] The file /Font-Awesome-4.7/css/font-awesome.min.css was not modified
+2021-10-08 16:18:44.630 +02:00 [INF] The file /css/site.css was not modified
+2021-10-08 16:18:44.631 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - - - 304 - text/css 7.5489ms
+2021-10-08 16:18:44.631 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/site.css?v=5DNObiB6wo9fCuFRbABwIGpHU5uyOHghRti8Ux2O77M - - - 304 - text/css 8.7567ms
+2021-10-08 16:18:44.631 +02:00 [INF] The file /images/spatulapng.png was not modified
+2021-10-08 16:18:44.631 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulapng.png - - - 304 - image/png 9.3539ms
+2021-10-08 16:18:44.635 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-10-08 16:18:44.635 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - - - 304 - text/css 11.0070ms
+2021-10-08 16:18:44.873 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/videos/intro.mp4 - -
+2021-10-08 16:18:44.878 +02:00 [INF] The file /videos/intro.mp4 was not modified
+2021-10-08 16:18:44.878 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/videos/intro.mp4 - - - 304 - video/mp4 5.3307ms
+2021-10-08 16:18:44.941 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/fonts/fontawesome-webfont.woff2?v=4.7.0 - -
+2021-10-08 16:18:45.154 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\fonts\fontawesome-webfont.woff2'
+2021-10-08 16:18:45.165 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 200 77160 font/woff2 223.8620ms
+2021-10-08 16:19:02.107 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/reviews/create - -
+2021-10-08 16:19:02.119 +02:00 [INF] Route matched with {action = "Create", controller = "Reviews", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller SpatulaApi.Controllers.ReviewsController (SpatulaApi).
+2021-10-08 16:19:02.122 +02:00 [INF] Executing ViewResult, running view Create.
+2021-10-08 16:19:02.260 +02:00 [INF] Executed ViewResult - view Create executed in 139.9819ms.
+2021-10-08 16:19:02.260 +02:00 [INF] Executed action SpatulaApi.Controllers.ReviewsController.Create (SpatulaApi) in 141.0598ms
+2021-10-08 16:19:02.261 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/reviews/create - - - 200 - text/html;+charset=utf-8 154.2098ms
+2021-10-08 16:19:02.320 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulawords.png - -
+2021-10-08 16:19:02.337 +02:00 [INF] Sending file. Request path: '/images/spatulawords.png'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\images\spatulawords.png'
+2021-10-08 16:19:02.338 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulawords.png - - - 200 22544 image/png 18.1015ms
+2021-10-08 16:19:21.968 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-10-08 16:19:22.020 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2021-10-08 16:19:22.036 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 68.3588ms
+2021-10-08 16:19:26.716 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-10-08 16:19:26.717 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:19:26.718 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:19:26.722 +02:00 [INF] Executed ViewResult - view Index executed in 4.3084ms.
+2021-10-08 16:19:26.722 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 4.9876ms
+2021-10-08 16:19:26.723 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 7.4683ms
+2021-10-08 16:19:27.065 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/fonts/fontawesome-webfont.woff2?v=4.7.0 - -
+2021-10-08 16:19:27.072 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\fonts\fontawesome-webfont.woff2'
+2021-10-08 16:19:27.075 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 200 77160 font/woff2 10.2480ms
+2021-10-08 16:19:34.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-10-08 16:19:34.490 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2021-10-08 16:19:34.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 304 - text/plain 2.7283ms
+2021-10-08 16:29:41.295 +02:00 [INF] Application started
+2021-10-08 16:29:44.181 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-08 16:29:44.966 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-08 16:29:44.966 +02:00 [INF] Hosting environment: Development
+2021-10-08 16:29:44.966 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-08 16:29:45.046 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-08 16:29:45.322 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 278.3937ms
+2021-10-08 16:29:45.401 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-10-08 16:29:45.458 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-10-08 16:29:45.459 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 57.7083ms
+2021-10-08 16:29:45.676 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-08 16:29:45.941 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 262.2736ms
+2021-10-08 16:29:46.011 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-08 16:29:46.472 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:29:46.519 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:29:46.769 +02:00 [INF] Executed ViewResult - view Index executed in 261.4215ms.
+2021-10-08 16:29:46.771 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 298.3944ms
+2021-10-08 16:29:46.778 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 766.0205ms
+2021-10-08 16:29:52.129 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/reviews/create - -
+2021-10-08 16:29:52.159 +02:00 [INF] Route matched with {action = "Create", controller = "Reviews", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller SpatulaApi.Controllers.ReviewsController (SpatulaApi).
+2021-10-08 16:29:52.427 +02:00 [INF] Executing ViewResult, running view Create.
+2021-10-08 16:29:52.585 +02:00 [INF] Executed ViewResult - view Create executed in 160.0099ms.
+2021-10-08 16:29:52.585 +02:00 [INF] Executed action SpatulaApi.Controllers.ReviewsController.Create (SpatulaApi) in 425.5088ms
+2021-10-08 16:29:52.589 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/reviews/create - - - 200 - text/html;+charset=utf-8 459.3319ms
+2021-10-08 16:29:52.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulawords.png - -
+2021-10-08 16:29:52.697 +02:00 [INF] The file /images/spatulawords.png was not modified
+2021-10-08 16:29:52.700 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulawords.png - - - 304 - image/png 13.6086ms
+2021-10-08 16:35:38.284 +02:00 [INF] Application started
+2021-10-08 16:35:43.457 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-08 16:35:44.449 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-08 16:35:44.450 +02:00 [INF] Hosting environment: Development
+2021-10-08 16:35:44.450 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-08 16:35:44.575 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-08 16:35:44.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-08 16:35:45.183 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 614.2786ms
+2021-10-08 16:35:45.569 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:35:45.655 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:35:45.801 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-08 16:35:46.349 +02:00 [INF] Executed ViewResult - view Index executed in 720.7995ms.
+2021-10-08 16:35:46.351 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 781.2547ms
+2021-10-08 16:35:46.357 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1791.4392ms
+2021-10-08 16:35:46.376 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 574.0719ms
+2021-10-08 16:35:56.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/reviews/create - -
+2021-10-08 16:35:56.506 +02:00 [INF] Route matched with {action = "Create", controller = "Reviews", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller SpatulaApi.Controllers.ReviewsController (SpatulaApi).
+2021-10-08 16:35:56.789 +02:00 [INF] Executing ViewResult, running view Create.
+2021-10-08 16:35:56.945 +02:00 [INF] Executed ViewResult - view Create executed in 157.8824ms.
+2021-10-08 16:35:56.945 +02:00 [INF] Executed action SpatulaApi.Controllers.ReviewsController.Create (SpatulaApi) in 439.4241ms
+2021-10-08 16:35:56.949 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/reviews/create - - - 200 - text/html;+charset=utf-8 459.3158ms
+2021-10-08 16:35:57.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulawords.png - -
+2021-10-08 16:35:57.064 +02:00 [INF] The file /images/spatulawords.png was not modified
+2021-10-08 16:35:57.088 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulawords.png - - - 304 - image/png 44.7278ms
+2021-10-08 16:36:27.174 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-10-08 16:36:27.185 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2021-10-08 16:36:27.186 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 304 - text/plain 11.2428ms
+2021-10-08 16:38:58.893 +02:00 [INF] Application started
+2021-10-08 16:39:02.910 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-08 16:39:04.045 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-08 16:39:04.045 +02:00 [INF] Hosting environment: Development
+2021-10-08 16:39:04.045 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-08 16:39:04.215 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-08 16:39:04.217 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-08 16:39:04.937 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 727.5215ms
+2021-10-08 16:39:05.383 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:39:05.462 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:39:05.632 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-08 16:39:05.978 +02:00 [INF] Executed ViewResult - view Index executed in 531.6327ms.
+2021-10-08 16:39:05.981 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 596.5475ms
+2021-10-08 16:39:05.990 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1784.2014ms
+2021-10-08 16:39:06.106 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 473.7465ms
+2021-10-08 16:39:13.036 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/reviews/create - -
+2021-10-08 16:39:13.072 +02:00 [INF] Route matched with {action = "Create", controller = "Reviews", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller SpatulaApi.Controllers.ReviewsController (SpatulaApi).
+2021-10-08 16:39:13.592 +02:00 [INF] Executing ViewResult, running view Create.
+2021-10-08 16:39:13.852 +02:00 [INF] Executed ViewResult - view Create executed in 261.5901ms.
+2021-10-08 16:39:13.852 +02:00 [INF] Executed action SpatulaApi.Controllers.ReviewsController.Create (SpatulaApi) in 779.7911ms
+2021-10-08 16:39:13.860 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/reviews/create - - - 200 - text/html;+charset=utf-8 824.3242ms
+2021-10-08 16:39:14.057 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulawords.png - -
+2021-10-08 16:39:14.134 +02:00 [INF] Sending file. Request path: '/images/spatulawords.png'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\images\spatulawords.png'
+2021-10-08 16:39:14.136 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulawords.png - - - 200 22544 image/png 78.9623ms
+2021-10-08 16:40:44.520 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-10-08 16:40:44.532 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2021-10-08 16:40:44.540 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 304 - text/plain 19.7801ms
+2021-10-08 16:51:34.549 +02:00 [INF] Application started
+2021-10-08 16:51:37.635 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-08 16:51:38.454 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-08 16:51:38.454 +02:00 [INF] Hosting environment: Development
+2021-10-08 16:51:38.454 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-08 16:51:38.534 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-08 16:51:38.570 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-08 16:51:38.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 462.1669ms
+2021-10-08 16:51:39.157 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-08 16:51:39.205 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-08 16:51:39.339 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-08 16:51:39.522 +02:00 [INF] Executed ViewResult - view Index executed in 327.2235ms.
+2021-10-08 16:51:39.525 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 366.4409ms
+2021-10-08 16:51:39.533 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 962.5699ms
+2021-10-08 16:51:39.620 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 280.8776ms
+2021-10-08 16:51:46.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/reviews/create - -
+2021-10-08 16:51:46.102 +02:00 [INF] Route matched with {action = "Create", controller = "Reviews", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller SpatulaApi.Controllers.ReviewsController (SpatulaApi).
+2021-10-08 16:51:46.374 +02:00 [INF] Executing ViewResult, running view Create.
+2021-10-08 16:51:46.520 +02:00 [INF] Executed ViewResult - view Create executed in 147.602ms.
+2021-10-08 16:51:46.520 +02:00 [INF] Executed action SpatulaApi.Controllers.ReviewsController.Create (SpatulaApi) in 417.5515ms
+2021-10-08 16:51:46.523 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/reviews/create - - - 200 - text/html;+charset=utf-8 436.6642ms
+2021-10-08 16:51:46.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulawords.png - -
+2021-10-08 16:51:46.635 +02:00 [INF] Sending file. Request path: '/images/spatulawords.png'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\images\spatulawords.png'
+2021-10-08 16:51:46.638 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulawords.png - - - 200 22544 image/png 40.6122ms
+2021-10-08 16:51:52.600 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-10-08 16:51:52.603 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2021-10-08 16:51:52.605 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 304 - text/plain 4.9942ms

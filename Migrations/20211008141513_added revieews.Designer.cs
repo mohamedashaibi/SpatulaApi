@@ -10,16 +10,16 @@ using SpatulaApi.Data;
 namespace SpatulaApi.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20210522184532_CreateDatabase")]
-    partial class CreateDatabase
+    [Migration("20211008141513_added revieews")]
+    partial class addedrevieews
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.1");
+                .HasAnnotation("ProductVersion", "5.0.8")
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -50,15 +50,15 @@ namespace SpatulaApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b48ea5c5-cebf-45e7-9c10-1b32b145684b",
-                            ConcurrencyStamp = "a7fa5907-0c08-4451-bfd9-30dd9996346a",
+                            Id = "a6d7ae48-c34c-4224-80ef-4dc5e53267ce",
+                            ConcurrencyStamp = "d412d53c-2112-4fa5-a3a7-fe6a82c79504",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "559b63c7-1ce8-46e5-b7f1-6ade540bf95c",
-                            ConcurrencyStamp = "4de34046-eddc-4a60-a64c-1fbd465f8b18",
+                            Id = "db99e2c0-7c9e-4c1d-af45-809a2a1f5e7f",
+                            ConcurrencyStamp = "1fb10fb2-79cf-451f-8598-87ac183c91dc",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -69,7 +69,7 @@ namespace SpatulaApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -93,7 +93,7 @@ namespace SpatulaApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -115,10 +115,12 @@ namespace SpatulaApi.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -147,6 +149,13 @@ namespace SpatulaApi.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "04be4ced-e4cb-408f-8f55-38cd0677cbec",
+                            RoleId = "db99e2c0-7c9e-4c1d-af45-809a2a1f5e7f"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -155,10 +164,12 @@ namespace SpatulaApi.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -166,6 +177,30 @@ namespace SpatulaApi.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("SpatulaApi.Data.Advert", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Adverts");
                 });
 
             modelBuilder.Entity("SpatulaApi.Data.ApiUser", b =>
@@ -237,6 +272,25 @@ namespace SpatulaApi.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "04be4ced-e4cb-408f-8f55-38cd0677cbec",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "2faf8fa5-58b0-46c5-9b2f-60c0a588615a",
+                            Email = "admin@example.com",
+                            EmailConfirmed = false,
+                            FirstName = "Admin",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@EXAMPLE.COM",
+                            NormalizedUserName = "ADMINISTRATOR",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGHx4IxjJU0SnUkR+1eI0fjmAY13tyxO1QniTSJmvgNSS9qWnG+AK0M36yUH00eGLg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "c3e451e4-6f7a-4b4f-a49b-80e48a8f99a4",
+                            TwoFactorEnabled = false,
+                            UserName = "Administrator"
+                        });
                 });
 
             modelBuilder.Entity("SpatulaApi.Data.Category", b =>
@@ -244,7 +298,7 @@ namespace SpatulaApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ArabicName")
                         .HasColumnType("nvarchar(max)");
@@ -265,7 +319,7 @@ namespace SpatulaApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
@@ -316,7 +370,7 @@ namespace SpatulaApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ArabicName")
                         .HasColumnType("nvarchar(max)");
@@ -331,9 +385,6 @@ namespace SpatulaApi.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EnglishName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Ingredients")
@@ -351,6 +402,9 @@ namespace SpatulaApi.Migrations
                     b.Property<string>("VideoUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Warnings")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
@@ -360,12 +414,39 @@ namespace SpatulaApi.Migrations
                     b.ToTable("Lessons");
                 });
 
+            modelBuilder.Entity("SpatulaApi.Data.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<short>("AppSpeed")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("DownloadQuality")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("EaseOfUse")
+                        .HasColumnType("smallint");
+
+                    b.Property<string>("Notes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<short>("PaymentQuality")
+                        .HasColumnType("smallint");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Reviews");
+                });
+
             modelBuilder.Entity("SpatulaApi.Data.UserCourse", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("AddedDate")
                         .HasColumnType("datetime2");

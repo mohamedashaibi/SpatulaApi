@@ -10,6 +10,7 @@ namespace SpatulaApi.IRepository
 	{
 		IGenericRepository<Course> CourseRepo { get; }
 		IGenericRepository<Category> CategoryRepo { get; }
+		IGenericRepository<Advert> AdvertRepo { get; }
 		IGenericRepository<Lesson> LessonRepo { get; }
 		IGenericRepository<UserCourse> UserCourseRepo { get; }
 		IGenericRepository<ApiUser> UserRepo { get; }

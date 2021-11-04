@@ -15,11 +15,13 @@ namespace SpatulaApi.Configurations.Entities
 			builder.HasData(
 				new IdentityRole
 				{
+					Id = "a6d7ae48-c34c-4224-80ef-4dc5e53267ce",
 					Name = "User",
 					NormalizedName = "USER"
 				},
 				new IdentityRole
 				{
+					Id = "db99e2c0-7c9e-4c1d-af45-809a2a1f5e7f",
 					Name= "Administrator",
 					NormalizedName="ADMINISTRATOR"
 				}

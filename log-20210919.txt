@@ -1,0 +1,780 @@
+2021-09-19 00:55:06.423 +02:00 [INF] Application started
+2021-09-19 00:55:15.674 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-19 00:55:17.252 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-19 00:55:17.252 +02:00 [INF] Hosting environment: Development
+2021-09-19 00:55:17.253 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-09-19 00:55:17.391 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-09-19 00:55:17.391 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-09-19 00:55:17.910 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 525.4385ms
+2021-09-19 00:55:18.026 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui-standalone-preset.js - -
+2021-09-19 00:55:18.026 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-09-19 00:55:18.026 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui-bundle.js - -
+2021-09-19 00:55:18.057 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2021-09-19 00:55:18.057 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2021-09-19 00:55:18.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 33.3823ms
+2021-09-19 00:55:18.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 33.3841ms
+2021-09-19 00:55:18.131 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-19 00:55:18.137 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 200 142933 text/css 111.1310ms
+2021-09-19 00:55:18.188 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 00:55:18.267 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 00:55:18.326 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-09-19 00:55:18.340 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-09-19 00:55:18.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 14.6965ms
+2021-09-19 00:55:18.448 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-09-19 00:55:18.856 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 408.4928ms
+2021-09-19 00:55:19.334 +02:00 [INF] Executed ViewResult - view Index executed in 1086.3431ms.
+2021-09-19 00:55:19.339 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 1148.8286ms
+2021-09-19 00:55:19.349 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1966.4516ms
+2021-09-19 00:56:12.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-19 00:56:12.306 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 00:56:12.328 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 00:56:12.356 +02:00 [INF] Executed ViewResult - view Index executed in 28.3762ms.
+2021-09-19 00:56:12.357 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 50.1909ms
+2021-09-19 00:56:12.378 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 86.3350ms
+2021-09-19 00:56:12.552 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - -
+2021-09-19 00:56:12.562 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+2021-09-19 00:56:12.563 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - - - 304 - text/css 10.9611ms
+2021-09-19 00:56:12.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css - -
+2021-09-19 00:56:12.874 +02:00 [INF] The file /Font-Awesome-4.7/css/font-awesome.min.css was not modified
+2021-09-19 00:56:12.874 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/templatemo-style.css - -
+2021-09-19 00:56:12.874 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css - - - 304 - text/css 1.5479ms
+2021-09-19 00:56:12.874 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatula.jpeg - -
+2021-09-19 00:56:12.875 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/jquery/dist/jquery.min.js - -
+2021-09-19 00:56:12.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-09-19 00:56:12.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulapng.png - -
+2021-09-19 00:56:12.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-09-19 00:56:12.877 +02:00 [INF] The file /images/spatula.jpeg was not modified
+2021-09-19 00:56:12.877 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-09-19 00:56:12.877 +02:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2021-09-19 00:56:12.877 +02:00 [INF] The file /css/templatemo-style.css was not modified
+2021-09-19 00:56:12.877 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 1.4274ms
+2021-09-19 00:56:12.877 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatula.jpeg - - - 304 - image/jpeg 2.6513ms
+2021-09-19 00:56:12.877 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 2.3772ms
+2021-09-19 00:56:12.877 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/templatemo-style.css - - - 304 - text/css 3.7363ms
+2021-09-19 00:56:12.877 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - -
+2021-09-19 00:56:12.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - -
+2021-09-19 00:56:12.877 +02:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2021-09-19 00:56:12.877 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/videos/intro.mp4 - -
+2021-09-19 00:56:12.878 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 2.4961ms
+2021-09-19 00:56:12.879 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-09-19 00:56:12.879 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - - - 304 - text/css 1.5266ms
+2021-09-19 00:56:12.878 +02:00 [INF] The file /images/spatulapng.png was not modified
+2021-09-19 00:56:12.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulapng.png - - - 304 - image/png 4.1149ms
+2021-09-19 00:56:12.897 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - -
+2021-09-19 00:56:12.898 +02:00 [INF] The file /css/site.css was not modified
+2021-09-19 00:56:12.898 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - - - 304 - text/css 1.4935ms
+2021-09-19 00:56:13.060 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/css/font-awesome.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\css\font-awesome.min.css'
+2021-09-19 00:56:13.061 +02:00 [INF] The file /videos/intro.mp4 was not modified
+2021-09-19 00:56:13.061 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/videos/intro.mp4 - - - 304 - video/mp4 183.7685ms
+2021-09-19 00:56:13.123 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - - - 200 31000 text/css 245.4821ms
+2021-09-19 00:56:13.710 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/tm-catalyst-bg.jpg - -
+2021-09-19 00:56:13.713 +02:00 [INF] The file /images/tm-catalyst-bg.jpg was not modified
+2021-09-19 00:56:13.714 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/tm-catalyst-bg.jpg - - - 304 - image/jpeg 3.8711ms
+2021-09-19 00:56:46.542 +02:00 [INF] Application started
+2021-09-19 00:56:50.503 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-19 00:56:51.743 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-19 00:56:51.743 +02:00 [INF] Hosting environment: Development
+2021-09-19 00:56:51.744 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-09-19 00:56:51.856 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-09-19 00:56:52.235 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-09-19 00:56:52.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 384.9295ms
+2021-09-19 00:56:52.705 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-09-19 00:56:53.035 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 00:56:53.074 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 367.7159ms
+2021-09-19 00:56:53.145 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 00:56:54.001 +02:00 [INF] Executed ViewResult - view Index executed in 885.7758ms.
+2021-09-19 00:56:54.007 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 970.1504ms
+2021-09-19 00:56:54.016 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1781.0839ms
+2021-09-19 00:56:56.432 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-19 00:56:56.437 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 00:56:56.440 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 00:56:56.459 +02:00 [INF] Executed ViewResult - view Index executed in 19.5905ms.
+2021-09-19 00:56:56.460 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 22.5377ms
+2021-09-19 00:56:56.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 30.4902ms
+2021-09-19 00:56:58.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Login - -
+2021-09-19 00:56:58.582 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 00:56:59.395 +02:00 [INF] Executing ViewResult, running view Login.
+2021-09-19 00:56:59.566 +02:00 [INF] Executed ViewResult - view Login executed in 174.3028ms.
+2021-09-19 00:56:59.567 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 984.3772ms
+2021-09-19 00:56:59.571 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Login - - - 200 - text/html;+charset=utf-8 1012.9360ms
+2021-09-19 00:57:01.360 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230
+2021-09-19 00:57:01.374 +02:00 [INF] CORS policy execution successful.
+2021-09-19 00:57:01.417 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 00:57:03.769 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 00:57:12.936 +02:00 [INF] Executed DbCommand (142ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-09-19 00:57:13.306 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-09-19 00:57:13.370 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2021-09-19 00:57:13.453 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2021-09-19 00:57:13.497 +02:00 [INF] Executing RedirectResult, redirecting to /Courses.
+2021-09-19 00:57:13.500 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 12082.2045ms
+2021-09-19 00:57:13.513 +02:00 [INF] Session started; Key:1afedcb2-ebc5-b385-0111-92108dc18a10, Id:346693d3-f1bb-03a8-e088-c19ad4d75d46
+2021-09-19 00:57:13.528 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230 - 302 - - 12167.9275ms
+2021-09-19 00:57:13.532 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses - -
+2021-09-19 00:57:13.540 +02:00 [INF] Route matched with {action = "Index", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 00:57:13.638 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 00:57:13.667 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+2021-09-19 00:57:13.771 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 00:57:13.967 +02:00 [INF] Executed ViewResult - view Index executed in 197.6004ms.
+2021-09-19 00:57:13.967 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Index (SpatulaApi) in 426.321ms
+2021-09-19 00:57:13.968 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses - - - 200 - text/html;+charset=utf-8 435.8332ms
+2021-09-19 00:57:31.157 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Details/1 - -
+2021-09-19 00:57:31.166 +02:00 [INF] Route matched with {action = "Details", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 00:57:31.188 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 00:57:31.512 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Cost], [t].[CreatedById], [t].[CreatedDate], [t].[Description], [t].[Featured], [t].[Name], [t].[Picture], [t].[Status], [t].[UpdatedById], [t].[UpdatedDate], [t].[Id0], [t].[ArabicName], [t].[EnglishName], [t].[Status0], [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [c0].[Id] AS [Id0], [c0].[ArabicName], [c0].[EnglishName], [c0].[Status] AS [Status0]
+    FROM [Courses] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Lessons] AS [l] ON [t].[Id] = [l].[CourseId]
+ORDER BY [t].[Id], [t].[Id0], [l].[Id]
+2021-09-19 00:57:31.577 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 00:57:31.638 +02:00 [INF] Executed ViewResult - view Details executed in 62.9632ms.
+2021-09-19 00:57:31.639 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Details (SpatulaApi) in 472.8725ms
+2021-09-19 00:57:31.639 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Details/1 - - - 200 - text/html;+charset=utf-8 482.1002ms
+2021-09-19 00:57:31.705 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/1/pic2 - -
+2021-09-19 00:57:31.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/1/pic2 - - - 404 - - 92.8321ms
+2021-09-19 00:57:38.859 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/AddLesson/1 - -
+2021-09-19 00:57:38.871 +02:00 [INF] Route matched with {action = "AddLesson", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddLesson(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 00:57:38.876 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 00:57:38.901 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+WHERE [c].[Id] = @__p_0
+2021-09-19 00:57:38.905 +02:00 [INF] Executing ViewResult, running view AddLesson.
+2021-09-19 00:57:39.013 +02:00 [INF] Executed ViewResult - view AddLesson executed in 109.1459ms.
+2021-09-19 00:57:39.013 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.AddLesson (SpatulaApi) in 141.9845ms
+2021-09-19 00:57:39.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/AddLesson/1 - - - 200 - text/html;+charset=utf-8 154.9712ms
+2021-09-19 00:57:39.121 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/jquery-validation/dist/jquery.validate.js - -
+2021-09-19 00:57:39.123 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2021-09-19 00:57:39.275 +02:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2021-09-19 00:57:39.275 +02:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2021-09-19 00:57:39.275 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 application/javascript 152.0059ms
+2021-09-19 00:57:39.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 application/javascript 156.8159ms
+2021-09-19 15:51:31.498 +02:00 [INF] Application started
+2021-09-19 15:51:35.639 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-19 15:51:36.649 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-19 15:51:36.649 +02:00 [INF] Hosting environment: Development
+2021-09-19 15:51:36.649 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-09-19 15:51:36.745 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-09-19 15:51:36.745 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-09-19 15:51:37.147 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 406.3606ms
+2021-09-19 15:51:37.263 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-09-19 15:51:37.333 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-19 15:51:37.333 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 70.1310ms
+2021-09-19 15:51:37.357 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 15:51:37.418 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 15:51:37.449 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-09-19 15:51:37.451 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-09-19 15:51:37.451 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.2147ms
+2021-09-19 15:51:37.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-09-19 15:51:37.847 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 311.6951ms
+2021-09-19 15:51:38.211 +02:00 [INF] Executed ViewResult - view Index executed in 809.2391ms.
+2021-09-19 15:51:38.216 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 857.0364ms
+2021-09-19 15:51:38.225 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1486.9458ms
+2021-09-19 16:00:32.023 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Account/facebooklogin?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - -
+2021-09-19 16:00:32.091 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi)'
+2021-09-19 16:00:32.125 +02:00 [INF] Route matched with {action = "LoginFacebook", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginFacebook(System.String) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-09-19 16:00:32.610 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-09-19 16:00:32.614 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-09-19 16:00:33.527 +02:00 [INF] Received HTTP response headers after 907.5685ms - 200
+2021-09-19 16:00:33.529 +02:00 [INF] End processing HTTP request after 920.7186ms - 200
+2021-09-19 16:00:33.822 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-09-19 16:00:33.822 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-09-19 16:00:34.203 +02:00 [INF] Received HTTP response headers after 380.5125ms - 200
+2021-09-19 16:00:34.203 +02:00 [INF] End processing HTTP request after 381.0374ms - 200
+2021-09-19 16:00:35.889 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:00:38.965 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-19 16:00:39.224 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-19 16:00:39.373 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-09-19 16:00:39.614 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Data.ApiUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-19 16:00:39.757 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi) in 7632.4054ms
+2021-09-19 16:00:39.759 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi)'
+2021-09-19 16:00:39.774 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Account/facebooklogin?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - - - 202 1056 application/json;+charset=utf-8 7752.2920ms
+2021-09-19 16:00:48.889 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/api/Account/facebookregister?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - 0
+2021-09-19 16:00:48.895 +02:00 [INF] CORS policy execution successful.
+2021-09-19 16:00:48.907 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.AccountController.RegisterFacebook (SpatulaApi)'
+2021-09-19 16:00:48.914 +02:00 [INF] Route matched with {action = "RegisterFacebook", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterFacebook(System.String) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-09-19 16:00:48.934 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-09-19 16:00:48.934 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-09-19 16:00:49.073 +02:00 [INF] Received HTTP response headers after 139.1521ms - 200
+2021-09-19 16:00:49.073 +02:00 [INF] End processing HTTP request after 139.6425ms - 200
+2021-09-19 16:00:49.076 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-09-19 16:00:49.076 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-09-19 16:00:49.393 +02:00 [INF] Received HTTP response headers after 317.2267ms - 200
+2021-09-19 16:00:49.394 +02:00 [INF] End processing HTTP request after 317.613ms - 200
+2021-09-19 16:00:49.449 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:00:49.452 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-19 16:00:49.459 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2021-09-19 16:00:49.466 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.RegisterFacebook (SpatulaApi) in 551.7863ms
+2021-09-19 16:00:49.466 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.AccountController.RegisterFacebook (SpatulaApi)'
+2021-09-19 16:00:49.467 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/api/Account/facebookregister?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - 0 - 400 - text/plain;+charset=utf-8 578.0026ms
+2021-09-19 16:01:26.969 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Lessons/1 - -
+2021-09-19 16:01:26.984 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-19 16:01:26.992 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-19 16:01:26.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Lessons/1 - - - 401 - - 26.3981ms
+2021-09-19 16:03:24.362 +02:00 [INF] Application started
+2021-09-19 16:03:26.864 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-19 16:03:27.593 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-19 16:03:27.593 +02:00 [INF] Hosting environment: Development
+2021-09-19 16:03:27.594 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-09-19 16:03:27.682 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-09-19 16:03:27.682 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-09-19 16:03:28.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 379.7655ms
+2021-09-19 16:03:28.170 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-09-19 16:03:28.234 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-19 16:03:28.235 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 65.1286ms
+2021-09-19 16:03:28.275 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 16:03:28.332 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:03:28.359 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-09-19 16:03:28.361 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-09-19 16:03:28.361 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.4091ms
+2021-09-19 16:03:28.438 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-09-19 16:03:28.776 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 338.8281ms
+2021-09-19 16:03:28.971 +02:00 [INF] Executed ViewResult - view Index executed in 653.2429ms.
+2021-09-19 16:03:28.975 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 698.8787ms
+2021-09-19 16:03:28.985 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1309.7239ms
+2021-09-19 16:03:33.704 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-19 16:03:33.707 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 16:03:33.709 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:03:33.718 +02:00 [INF] Executed ViewResult - view Index executed in 9.659ms.
+2021-09-19 16:03:33.721 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 13.2364ms
+2021-09-19 16:03:33.727 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 23.6672ms
+2021-09-19 16:03:33.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - -
+2021-09-19 16:03:33.831 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - -
+2021-09-19 16:03:33.832 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - -
+2021-09-19 16:03:33.833 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatula.jpeg - -
+2021-09-19 16:03:33.833 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - -
+2021-09-19 16:03:33.835 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-09-19 16:03:33.838 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-09-19 16:03:33.838 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/css/font-awesome.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\css\font-awesome.min.css'
+2021-09-19 16:03:33.839 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\css\site.css'
+2021-09-19 16:03:33.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - - - 0 31000 text/css 13.2731ms
+2021-09-19 16:03:33.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - - - 0 155764 text/css 6.4986ms
+2021-09-19 16:03:33.840 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - - - 0 2049 text/css 8.0216ms
+2021-09-19 16:03:33.841 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2021-09-19 16:03:33.841 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-09-19 16:03:33.841 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - - - 0 202385 text/css 8.7553ms
+2021-09-19 16:03:33.841 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155764 text/css 5.9768ms
+2021-09-19 16:03:33.841 +02:00 [INF] Sending file. Request path: '/images/spatula.jpeg'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\images\spatula.jpeg'
+2021-09-19 16:03:33.842 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatula.jpeg - - - 0 19222 image/jpeg 9.0834ms
+2021-09-19 16:03:35.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Login - -
+2021-09-19 16:03:35.997 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:03:36.446 +02:00 [INF] Executing ViewResult, running view Login.
+2021-09-19 16:03:36.533 +02:00 [INF] Executed ViewResult - view Login executed in 89.0859ms.
+2021-09-19 16:03:36.534 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 536.2516ms
+2021-09-19 16:03:36.535 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Login - - - 200 - text/html;+charset=utf-8 548.8800ms
+2021-09-19 16:03:38.063 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230
+2021-09-19 16:03:38.072 +02:00 [INF] CORS policy execution successful.
+2021-09-19 16:03:38.098 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:03:39.708 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:03:41.096 +02:00 [INF] Executed DbCommand (115ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-09-19 16:03:41.412 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-09-19 16:03:41.457 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2021-09-19 16:03:41.516 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2021-09-19 16:03:41.546 +02:00 [INF] Executing RedirectResult, redirecting to /Courses.
+2021-09-19 16:03:41.548 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 3449.8606ms
+2021-09-19 16:03:41.553 +02:00 [INF] Session started; Key:1e9efc49-438a-aec3-d0ab-6f5cf3ec3a37, Id:edee200d-acfe-ba93-4a92-ef78eef214ca
+2021-09-19 16:03:41.563 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230 - 302 - - 3499.6129ms
+2021-09-19 16:03:41.565 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses - -
+2021-09-19 16:03:41.572 +02:00 [INF] Route matched with {action = "Index", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:03:41.636 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:03:41.655 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+2021-09-19 16:03:41.739 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:03:41.889 +02:00 [INF] Executed ViewResult - view Index executed in 151.2503ms.
+2021-09-19 16:03:41.890 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Index (SpatulaApi) in 317.5315ms
+2021-09-19 16:03:41.890 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses - - - 200 - text/html;+charset=utf-8 325.2438ms
+2021-09-19 16:04:58.669 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Details/1 - -
+2021-09-19 16:04:58.709 +02:00 [INF] Route matched with {action = "Details", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:04:58.752 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:04:59.082 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Cost], [t].[CreatedById], [t].[CreatedDate], [t].[Description], [t].[Featured], [t].[Name], [t].[Picture], [t].[Status], [t].[UpdatedById], [t].[UpdatedDate], [t].[Id0], [t].[ArabicName], [t].[EnglishName], [t].[Status0], [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [c0].[Id] AS [Id0], [c0].[ArabicName], [c0].[EnglishName], [c0].[Status] AS [Status0]
+    FROM [Courses] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Lessons] AS [l] ON [t].[Id] = [l].[CourseId]
+ORDER BY [t].[Id], [t].[Id0], [l].[Id]
+2021-09-19 16:04:59.133 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:04:59.196 +02:00 [INF] Executed ViewResult - view Details executed in 64.524ms.
+2021-09-19 16:04:59.197 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Details (SpatulaApi) in 487.831ms
+2021-09-19 16:04:59.198 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Details/1 - - - 200 - text/html;+charset=utf-8 528.3338ms
+2021-09-19 16:04:59.290 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/1/pic2 - -
+2021-09-19 16:04:59.748 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/1/pic2 - - - 404 - - 458.0120ms
+2021-09-19 16:05:23.600 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/favicon.ico - -
+2021-09-19 16:05:23.609 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/favicon.ico - - - 0 - - 8.6651ms
+2021-09-19 16:05:25.906 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Edit/3 - -
+2021-09-19 16:05:25.920 +02:00 [INF] Route matched with {action = "Edit", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:05:25.924 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:05:25.940 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+WHERE [c].[Id] = @__p_0
+2021-09-19 16:05:25.954 +02:00 [INF] Executing ViewResult, running view Edit.
+2021-09-19 16:05:26.174 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-09-19 16:05:26.225 +02:00 [INF] Executed ViewResult - view Edit executed in 271.7734ms.
+2021-09-19 16:05:26.225 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Edit (SpatulaApi) in 304.7836ms
+2021-09-19 16:05:26.226 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Edit/3 - - - 200 - text/html;+charset=utf-8 319.6250ms
+2021-09-19 16:05:26.299 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/jquery-validation/dist/jquery.validate.js - -
+2021-09-19 16:05:26.313 +02:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2021-09-19 16:05:26.313 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/jquery-validation/dist/jquery.validate.js - - - 0 48676 application/javascript 14.4020ms
+2021-09-19 16:05:26.314 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2021-09-19 16:05:26.322 +02:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2021-09-19 16:05:26.322 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 0 19366 application/javascript 8.0621ms
+2021-09-19 16:10:32.513 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Create - -
+2021-09-19 16:10:32.523 +02:00 [INF] Route matched with {action = "Create", controller = "Courses", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:10:32.526 +02:00 [INF] Executing ViewResult, running view Create.
+2021-09-19 16:10:32.578 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:10:32.673 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ArabicName], [c].[EnglishName], [c].[Status]
+FROM [Categories] AS [c]
+2021-09-19 16:10:32.688 +02:00 [INF] Executed ViewResult - view Create executed in 163.801ms.
+2021-09-19 16:10:32.689 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Create (SpatulaApi) in 165.9326ms
+2021-09-19 16:10:32.704 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Create - - - 200 - text/html;+charset=utf-8 190.9424ms
+2021-09-19 16:15:02.759 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Details/1 - -
+2021-09-19 16:15:02.766 +02:00 [INF] Route matched with {action = "Details", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:15:02.768 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:15:02.799 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Cost], [t].[CreatedById], [t].[CreatedDate], [t].[Description], [t].[Featured], [t].[Name], [t].[Picture], [t].[Status], [t].[UpdatedById], [t].[UpdatedDate], [t].[Id0], [t].[ArabicName], [t].[EnglishName], [t].[Status0], [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [c0].[Id] AS [Id0], [c0].[ArabicName], [c0].[EnglishName], [c0].[Status] AS [Status0]
+    FROM [Courses] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Lessons] AS [l] ON [t].[Id] = [l].[CourseId]
+ORDER BY [t].[Id], [t].[Id0], [l].[Id]
+2021-09-19 16:15:02.800 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:15:02.813 +02:00 [INF] Executed ViewResult - view Details executed in 13.3218ms.
+2021-09-19 16:15:02.813 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Details (SpatulaApi) in 47.4172ms
+2021-09-19 16:15:02.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Details/1 - - - 200 - text/html;+charset=utf-8 55.4157ms
+2021-09-19 16:15:02.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/1/pic2 - -
+2021-09-19 16:15:02.872 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/1/pic2 - - - 404 - - 2.3409ms
+2021-09-19 16:15:11.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lessons/ - -
+2021-09-19 16:15:11.195 +02:00 [INF] Route matched with {action = "Index", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SpatulaApi.Controllers.LessonsController (SpatulaApi).
+2021-09-19 16:15:11.199 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:15:11.234 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl], [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Lessons] AS [l]
+INNER JOIN [Courses] AS [c] ON [l].[CourseId] = [c].[Id]
+2021-09-19 16:15:11.284 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:15:11.322 +02:00 [INF] Executed ViewResult - view Index executed in 38.9346ms.
+2021-09-19 16:15:11.322 +02:00 [INF] Executed action SpatulaApi.Controllers.LessonsController.Index (SpatulaApi) in 127.2408ms
+2021-09-19 16:15:11.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lessons/ - - - 200 - text/html;+charset=utf-8 135.7170ms
+2021-09-19 16:15:13.829 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lessons/Details/1 - -
+2021-09-19 16:15:13.838 +02:00 [INF] Route matched with {action = "Details", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.LessonsController (SpatulaApi).
+2021-09-19 16:15:13.842 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:15:13.890 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl], [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Lessons] AS [l]
+INNER JOIN [Courses] AS [c] ON [l].[CourseId] = [c].[Id]
+LEFT JOIN [AspNetUsers] AS [a] ON [l].[CreatedById] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2021-09-19 16:15:13.892 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:15:13.918 +02:00 [INF] Executed ViewResult - view Details executed in 26.8559ms.
+2021-09-19 16:15:13.918 +02:00 [INF] Executed action SpatulaApi.Controllers.LessonsController.Details (SpatulaApi) in 80.1977ms
+2021-09-19 16:15:13.919 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lessons/Details/1 - - - 200 - text/html;+charset=utf-8 89.4793ms
+2021-09-19 16:15:22.901 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lessons/Details/2 - -
+2021-09-19 16:15:22.903 +02:00 [INF] Route matched with {action = "Details", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.LessonsController (SpatulaApi).
+2021-09-19 16:15:22.905 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:15:22.911 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl], [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Lessons] AS [l]
+INNER JOIN [Courses] AS [c] ON [l].[CourseId] = [c].[Id]
+LEFT JOIN [AspNetUsers] AS [a] ON [l].[CreatedById] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2021-09-19 16:15:22.916 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:15:22.920 +02:00 [INF] Executed ViewResult - view Details executed in 3.6193ms.
+2021-09-19 16:15:22.920 +02:00 [INF] Executed action SpatulaApi.Controllers.LessonsController.Details (SpatulaApi) in 17.4599ms
+2021-09-19 16:15:22.921 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lessons/Details/2 - - - 200 - text/html;+charset=utf-8 19.6866ms
+2021-09-19 16:19:47.482 +02:00 [INF] Application started
+2021-09-19 16:19:49.885 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-19 16:19:50.626 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-19 16:19:50.626 +02:00 [INF] Hosting environment: Development
+2021-09-19 16:19:50.626 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-09-19 16:19:50.708 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-09-19 16:19:50.708 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-09-19 16:19:51.053 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 347.4997ms
+2021-09-19 16:19:51.158 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-09-19 16:19:51.233 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-19 16:19:51.235 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 76.4488ms
+2021-09-19 16:19:51.255 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 16:19:51.308 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:19:51.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-09-19 16:19:51.385 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-09-19 16:19:51.385 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.6953ms
+2021-09-19 16:19:51.452 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-09-19 16:19:51.804 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 351.0610ms
+2021-09-19 16:19:51.992 +02:00 [INF] Executed ViewResult - view Index executed in 697.7325ms.
+2021-09-19 16:19:51.996 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 739.3742ms
+2021-09-19 16:19:52.007 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 1305.5020ms
+2021-09-19 16:19:57.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Courses - -
+2021-09-19 16:19:57.710 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.CoursesController.GetAllCourses (SpatulaApi)'
+2021-09-19 16:19:57.732 +02:00 [INF] Route matched with {action = "GetAllCourses", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourses() on controller SpatulaApi.Controllers.Api.CoursesController (SpatulaApi).
+2021-09-19 16:19:59.977 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:20:01.504 +02:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+WHERE [c].[Status] = CAST(1 AS bit)
+ORDER BY [c].[CreatedDate]
+2021-09-19 16:20:01.652 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.GetCourseDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-19 16:20:01.941 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CoursesController.GetAllCourses (SpatulaApi) in 4208.427ms
+2021-09-19 16:20:01.942 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.CoursesController.GetAllCourses (SpatulaApi)'
+2021-09-19 16:20:01.952 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Courses - - - 200 662 application/json;+charset=utf-8 4258.3419ms
+2021-09-19 16:20:21.603 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Courses/freecourses - -
+2021-09-19 16:20:21.614 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.CoursesController.GetFreeCourses (SpatulaApi)'
+2021-09-19 16:20:21.623 +02:00 [INF] Route matched with {action = "GetFreeCourses", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFreeCourses() on controller SpatulaApi.Controllers.Api.CoursesController (SpatulaApi).
+2021-09-19 16:20:21.713 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:20:21.848 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+WHERE ([c0].[EnglishName] = N'Free') AND ([c].[Status] = CAST(1 AS bit))
+2021-09-19 16:20:21.942 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CourseDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-19 16:20:21.969 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CoursesController.GetFreeCourses (SpatulaApi) in 345.4617ms
+2021-09-19 16:20:21.969 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.CoursesController.GetFreeCourses (SpatulaApi)'
+2021-09-19 16:20:21.970 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Courses/freecourses - - - 200 548 application/json;+charset=utf-8 366.4531ms
+2021-09-19 16:20:30.216 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Courses/paidcourses - -
+2021-09-19 16:20:30.220 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.CoursesController.GetPaidCourses (SpatulaApi)'
+2021-09-19 16:20:30.225 +02:00 [INF] Route matched with {action = "GetPaidCourses", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaidCourses() on controller SpatulaApi.Controllers.Api.CoursesController (SpatulaApi).
+2021-09-19 16:20:30.244 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:20:30.266 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+WHERE ([c0].[EnglishName] = N'Paid') AND ([c].[Status] = CAST(1 AS bit))
+2021-09-19 16:20:30.273 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.CourseDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-19 16:20:30.274 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.CoursesController.GetPaidCourses (SpatulaApi) in 48.3603ms
+2021-09-19 16:20:30.274 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.CoursesController.GetPaidCourses (SpatulaApi)'
+2021-09-19 16:20:30.275 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Courses/paidcourses - - - 200 179 application/json;+charset=utf-8 58.3755ms
+2021-09-19 16:20:46.263 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Lessons/courselessons/1 - -
+2021-09-19 16:20:46.264 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.LessonsController.GetLessonsCourse (SpatulaApi)'
+2021-09-19 16:20:46.270 +02:00 [INF] Route matched with {action = "GetLessonsCourse", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLessonsCourse(Int32) on controller SpatulaApi.Controllers.Api.LessonsController (SpatulaApi).
+2021-09-19 16:20:46.280 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:20:46.355 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+WHERE [c].[Id] = @__id_0
+2021-09-19 16:20:46.380 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__course_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM [Lessons] AS [l]
+WHERE ([l].[CourseId] = @__course_Id_0) AND ([l].[Status] = CAST(1 AS bit))
+ORDER BY [l].[Order]
+2021-09-19 16:20:46.389 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.LessonListDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-19 16:20:46.392 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.LessonsController.GetLessonsCourse (SpatulaApi) in 121.6441ms
+2021-09-19 16:20:46.392 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.LessonsController.GetLessonsCourse (SpatulaApi)'
+2021-09-19 16:20:46.392 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Lessons/courselessons/1 - - - 200 2 application/json;+charset=utf-8 129.5860ms
+2021-09-19 16:20:59.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Lessons/courselessons/2 - -
+2021-09-19 16:20:59.583 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.LessonsController.GetLessonsCourse (SpatulaApi)'
+2021-09-19 16:20:59.584 +02:00 [INF] Route matched with {action = "GetLessonsCourse", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLessonsCourse(Int32) on controller SpatulaApi.Controllers.Api.LessonsController (SpatulaApi).
+2021-09-19 16:20:59.586 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:20:59.594 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+WHERE [c].[Id] = @__id_0
+2021-09-19 16:20:59.601 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__course_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM [Lessons] AS [l]
+WHERE ([l].[CourseId] = @__course_Id_0) AND ([l].[Status] = CAST(1 AS bit))
+ORDER BY [l].[Order]
+2021-09-19 16:20:59.602 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SpatulaApi.Models.LessonListDTO, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-19 16:20:59.603 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.LessonsController.GetLessonsCourse (SpatulaApi) in 19.0817ms
+2021-09-19 16:20:59.603 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.LessonsController.GetLessonsCourse (SpatulaApi)'
+2021-09-19 16:20:59.604 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Lessons/courselessons/2 - - - 200 2 application/json;+charset=utf-8 21.2451ms
+2021-09-19 16:21:07.980 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-19 16:21:07.982 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 16:21:07.985 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:21:07.997 +02:00 [INF] Executed ViewResult - view Index executed in 13.3002ms.
+2021-09-19 16:21:07.997 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 15.3066ms
+2021-09-19 16:21:07.998 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 18.6651ms
+2021-09-19 16:21:08.135 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - -
+2021-09-19 16:21:08.139 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - -
+2021-09-19 16:21:08.142 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - -
+2021-09-19 16:21:08.150 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/css/font-awesome.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\css\font-awesome.min.css'
+2021-09-19 16:21:08.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - -
+2021-09-19 16:21:08.151 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - - - 0 31000 text/css 15.3640ms
+2021-09-19 16:21:08.168 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-09-19 16:21:08.168 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2021-09-19 16:21:08.169 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - - - 0 155764 text/css 28.3509ms
+2021-09-19 16:21:08.169 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - - - 0 202385 text/css 29.9341ms
+2021-09-19 16:21:08.169 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\css\site.css'
+2021-09-19 16:21:08.169 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - - - 0 2049 text/css 18.7907ms
+2021-09-19 16:21:10.251 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Login - -
+2021-09-19 16:21:10.261 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:21:10.276 +02:00 [INF] Executing ViewResult, running view Login.
+2021-09-19 16:21:10.362 +02:00 [INF] Executed ViewResult - view Login executed in 88.4895ms.
+2021-09-19 16:21:10.362 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 100.9012ms
+2021-09-19 16:21:10.363 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Login - - - 200 - text/html;+charset=utf-8 112.1864ms
+2021-09-19 16:21:12.318 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230
+2021-09-19 16:21:12.327 +02:00 [INF] CORS policy execution successful.
+2021-09-19 16:21:12.338 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:21:12.389 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:21:12.416 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-19 16:21:12.601 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-09-19 16:21:12.628 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2021-09-19 16:21:12.668 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2021-09-19 16:21:12.694 +02:00 [INF] Executing RedirectResult, redirecting to /Courses.
+2021-09-19 16:21:12.694 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 356.7105ms
+2021-09-19 16:21:12.697 +02:00 [INF] Session started; Key:7dd8ebe6-fb6b-ef98-aa8e-4e177de6fc09, Id:827ecc4f-95b4-0b0b-2b8b-e4f2203ab4c4
+2021-09-19 16:21:12.702 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230 - 302 - - 383.4824ms
+2021-09-19 16:21:12.708 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses - -
+2021-09-19 16:21:12.714 +02:00 [INF] Route matched with {action = "Index", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:21:12.717 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:21:12.730 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+2021-09-19 16:21:12.808 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:21:12.896 +02:00 [INF] Executed ViewResult - view Index executed in 88.8857ms.
+2021-09-19 16:21:12.896 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Index (SpatulaApi) in 182.0828ms
+2021-09-19 16:21:12.897 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses - - - 200 - text/html;+charset=utf-8 189.0744ms
+2021-09-19 16:21:16.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Details/1 - -
+2021-09-19 16:21:16.040 +02:00 [INF] Route matched with {action = "Details", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:21:16.046 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:21:16.220 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Cost], [t].[CreatedById], [t].[CreatedDate], [t].[Description], [t].[Featured], [t].[Name], [t].[Picture], [t].[Status], [t].[UpdatedById], [t].[UpdatedDate], [t].[Id0], [t].[ArabicName], [t].[EnglishName], [t].[Status0], [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [c0].[Id] AS [Id0], [c0].[ArabicName], [c0].[EnglishName], [c0].[Status] AS [Status0]
+    FROM [Courses] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Lessons] AS [l] ON [t].[Id] = [l].[CourseId]
+ORDER BY [t].[Id], [t].[Id0], [l].[Id]
+2021-09-19 16:21:16.258 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:21:16.304 +02:00 [INF] Executed ViewResult - view Details executed in 46.9031ms.
+2021-09-19 16:21:16.304 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Details (SpatulaApi) in 263.5443ms
+2021-09-19 16:21:16.305 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Details/1 - - - 200 - text/html;+charset=utf-8 271.4664ms
+2021-09-19 16:21:16.366 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/1/pic2 - -
+2021-09-19 16:21:16.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/1/pic2 - - - 404 - - 76.5791ms
+2021-09-19 16:21:20.574 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/favicon.ico - -
+2021-09-19 16:21:20.579 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/favicon.ico - - - 0 - - 5.1401ms
+2021-09-19 16:21:21.914 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Details/2 - -
+2021-09-19 16:21:21.914 +02:00 [INF] Route matched with {action = "Details", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:21:21.916 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:21:21.922 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Cost], [t].[CreatedById], [t].[CreatedDate], [t].[Description], [t].[Featured], [t].[Name], [t].[Picture], [t].[Status], [t].[UpdatedById], [t].[UpdatedDate], [t].[Id0], [t].[ArabicName], [t].[EnglishName], [t].[Status0], [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [c0].[Id] AS [Id0], [c0].[ArabicName], [c0].[EnglishName], [c0].[Status] AS [Status0]
+    FROM [Courses] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Lessons] AS [l] ON [t].[Id] = [l].[CourseId]
+ORDER BY [t].[Id], [t].[Id0], [l].[Id]
+2021-09-19 16:21:21.968 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:21:21.973 +02:00 [INF] Executed ViewResult - view Details executed in 5.0351ms.
+2021-09-19 16:21:21.974 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Details (SpatulaApi) in 59.093ms
+2021-09-19 16:21:21.974 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Details/2 - - - 200 - text/html;+charset=utf-8 60.5802ms
+2021-09-19 16:21:22.034 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/2/dfvet - -
+2021-09-19 16:21:22.037 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/2/dfvet - - - 404 - - 3.0987ms
+2021-09-19 16:21:27.841 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Lessons/Details/1 - -
+2021-09-19 16:21:27.848 +02:00 [INF] Route matched with {action = "Details", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.LessonsController (SpatulaApi).
+2021-09-19 16:21:27.854 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:21:27.910 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl], [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Lessons] AS [l]
+INNER JOIN [Courses] AS [c] ON [l].[CourseId] = [c].[Id]
+LEFT JOIN [AspNetUsers] AS [a] ON [l].[CreatedById] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2021-09-19 16:21:27.913 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:21:27.960 +02:00 [INF] Executed ViewResult - view Details executed in 48.6892ms.
+2021-09-19 16:21:27.961 +02:00 [INF] Executed action SpatulaApi.Controllers.LessonsController.Details (SpatulaApi) in 112.0721ms
+2021-09-19 16:21:27.963 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Lessons/Details/1 - - - 200 - text/html;+charset=utf-8 121.4329ms
+2021-09-19 16:21:32.445 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Lessons/Details/1 - -
+2021-09-19 16:21:32.445 +02:00 [INF] Route matched with {action = "Details", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.LessonsController (SpatulaApi).
+2021-09-19 16:21:32.446 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:21:32.450 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl], [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Lessons] AS [l]
+INNER JOIN [Courses] AS [c] ON [l].[CourseId] = [c].[Id]
+LEFT JOIN [AspNetUsers] AS [a] ON [l].[CreatedById] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2021-09-19 16:21:32.454 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:21:32.457 +02:00 [INF] Executed ViewResult - view Details executed in 3.0753ms.
+2021-09-19 16:21:32.458 +02:00 [INF] Executed action SpatulaApi.Controllers.LessonsController.Details (SpatulaApi) in 12.2778ms
+2021-09-19 16:21:32.459 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Lessons/Details/1 - - - 200 - text/html;+charset=utf-8 14.4789ms
+2021-09-19 16:21:34.206 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Lessons/Edit/1 - -
+2021-09-19 16:21:34.208 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Lessons/Edit/1 - - - 404 - - 2.0206ms
+2021-09-19 16:21:43.194 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Lessons/Edit/1 - -
+2021-09-19 16:21:43.197 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Lessons/Edit/1 - - - 404 - - 2.3387ms
+2021-09-19 16:47:52.415 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-19 16:47:52.424 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 16:47:52.435 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:47:52.437 +02:00 [INF] Accessing expired session, Key:7dd8ebe6-fb6b-ef98-aa8e-4e177de6fc09
+2021-09-19 16:47:52.439 +02:00 [INF] Executed ViewResult - view Index executed in 14.7453ms.
+2021-09-19 16:47:52.439 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 15.4185ms
+2021-09-19 16:47:52.440 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 25.5823ms
+2021-09-19 16:47:52.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - -
+2021-09-19 16:47:52.513 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/css/font-awesome.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\css\font-awesome.min.css'
+2021-09-19 16:47:52.513 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - - - 0 31000 text/css 3.4398ms
+2021-09-19 16:47:54.122 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Login - -
+2021-09-19 16:47:54.123 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:47:54.126 +02:00 [INF] Executing ViewResult, running view Login.
+2021-09-19 16:47:54.132 +02:00 [INF] Accessing expired session, Key:7dd8ebe6-fb6b-ef98-aa8e-4e177de6fc09
+2021-09-19 16:47:54.133 +02:00 [INF] Executed ViewResult - view Login executed in 8.2731ms.
+2021-09-19 16:47:54.134 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 10.6001ms
+2021-09-19 16:47:54.139 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Login - - - 200 - text/html;+charset=utf-8 16.9004ms
+2021-09-19 16:49:34.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Login - -
+2021-09-19 16:49:34.018 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:49:34.035 +02:00 [INF] Executing ViewResult, running view Login.
+2021-09-19 16:49:34.036 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css.map - -
+2021-09-19 16:49:34.067 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-09-19 16:49:34.089 +02:00 [INF] Executed ViewResult - view Login executed in 69.7679ms.
+2021-09-19 16:49:34.089 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 70.5329ms
+2021-09-19 16:49:34.090 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Login - - - 200 - text/html;+charset=utf-8 84.9695ms
+2021-09-19 16:49:34.159 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2021-09-19 16:49:34.159 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+2021-09-19 16:49:34.176 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css.map - - - 200 492048 text/plain 140.3768ms
+2021-09-19 16:49:34.176 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 108.9318ms
+2021-09-19 16:52:26.177 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230
+2021-09-19 16:52:26.179 +02:00 [INF] CORS policy execution successful.
+2021-09-19 16:52:26.185 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SpatulaApi.Models.UserLoginDTO) on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:52:26.192 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:52:26.233 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-19 16:52:26.259 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userLoginDTO_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__userLoginDTO_Email_0
+2021-09-19 16:52:26.264 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2021-09-19 16:52:26.272 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2021-09-19 16:52:26.272 +02:00 [INF] Accessing expired session, Key:7dd8ebe6-fb6b-ef98-aa8e-4e177de6fc09
+2021-09-19 16:52:26.273 +02:00 [INF] Executing RedirectResult, redirecting to /Courses.
+2021-09-19 16:52:26.273 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 87.9015ms
+2021-09-19 16:52:26.274 +02:00 [INF] Session started; Key:7dd8ebe6-fb6b-ef98-aa8e-4e177de6fc09, Id:c2121454-6618-48ff-ed2a-296db6d9c234
+2021-09-19 16:52:26.275 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44345/Accounts/Login application/x-www-form-urlencoded 230 - 302 - - 97.9992ms
+2021-09-19 16:52:26.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses - -
+2021-09-19 16:52:26.284 +02:00 [INF] Route matched with {action = "Index", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:52:26.285 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:52:26.292 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate]
+FROM [Courses] AS [c]
+2021-09-19 16:52:26.300 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:52:26.330 +02:00 [INF] Executed ViewResult - view Index executed in 36.959ms.
+2021-09-19 16:52:26.330 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Index (SpatulaApi) in 46.3039ms
+2021-09-19 16:52:26.331 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses - - - 200 - text/html;+charset=utf-8 47.8000ms
+2021-09-19 16:52:27.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-09-19 16:52:27.611 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css.map - -
+2021-09-19 16:52:27.615 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.css.map was not modified
+2021-09-19 16:52:27.615 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2021-09-19 16:52:27.616 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css.map - - - 304 - text/plain 4.9290ms
+2021-09-19 16:52:27.616 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 304 - text/plain 6.5812ms
+2021-09-19 16:52:31.822 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Courses/Details/2 - -
+2021-09-19 16:52:31.823 +02:00 [INF] Route matched with {action = "Details", controller = "Courses", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.CoursesController (SpatulaApi).
+2021-09-19 16:52:31.825 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:52:31.838 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Cost], [t].[CreatedById], [t].[CreatedDate], [t].[Description], [t].[Featured], [t].[Name], [t].[Picture], [t].[Status], [t].[UpdatedById], [t].[UpdatedDate], [t].[Id0], [t].[ArabicName], [t].[EnglishName], [t].[Status0], [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [c0].[Id] AS [Id0], [c0].[ArabicName], [c0].[EnglishName], [c0].[Status] AS [Status0]
+    FROM [Courses] AS [c]
+    INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[Id]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Lessons] AS [l] ON [t].[Id] = [l].[CourseId]
+ORDER BY [t].[Id], [t].[Id0], [l].[Id]
+2021-09-19 16:52:31.841 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:52:31.844 +02:00 [INF] Executed ViewResult - view Details executed in 4.0403ms.
+2021-09-19 16:52:31.844 +02:00 [INF] Executed action SpatulaApi.Controllers.CoursesController.Details (SpatulaApi) in 21.359ms
+2021-09-19 16:52:31.845 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Courses/Details/2 - - - 200 - text/html;+charset=utf-8 23.4118ms
+2021-09-19 16:52:31.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/2/dfvet - -
+2021-09-19 16:52:31.915 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/2/dfvet - - - 404 - - 2.4757ms
+2021-09-19 16:52:34.893 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Lessons/Details/1 - -
+2021-09-19 16:52:34.894 +02:00 [INF] Route matched with {action = "Details", controller = "Lessons", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller SpatulaApi.Controllers.LessonsController (SpatulaApi).
+2021-09-19 16:52:34.896 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-19 16:52:34.911 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[ArabicName], [l].[CourseId], [l].[CreatedById], [l].[CreatedDate], [l].[Description], [l].[EnglishName], [l].[Ingredients], [l].[Order], [l].[Status], [l].[Utensils], [l].[VideoUrl], [c].[Id], [c].[CategoryId], [c].[Cost], [c].[CreatedById], [c].[CreatedDate], [c].[Description], [c].[Featured], [c].[Name], [c].[Picture], [c].[Status], [c].[UpdatedById], [c].[UpdatedDate], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Lessons] AS [l]
+INNER JOIN [Courses] AS [c] ON [l].[CourseId] = [c].[Id]
+LEFT JOIN [AspNetUsers] AS [a] ON [l].[CreatedById] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2021-09-19 16:52:34.915 +02:00 [INF] Executing ViewResult, running view Details.
+2021-09-19 16:52:34.920 +02:00 [INF] Executed ViewResult - view Details executed in 6.1623ms.
+2021-09-19 16:52:34.921 +02:00 [INF] Executed action SpatulaApi.Controllers.LessonsController.Details (SpatulaApi) in 26.6421ms
+2021-09-19 16:52:34.924 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Lessons/Details/1 - - - 200 - text/html;+charset=utf-8 31.4382ms
+2021-09-19 16:52:38.149 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/favicon.ico - -
+2021-09-19 16:52:38.150 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/favicon.ico - - - 0 - - 1.1534ms
+2021-09-19 16:52:50.473 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Logout - -
+2021-09-19 16:52:50.476 +02:00 [INF] Route matched with {action = "Logout", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:52:50.478 +02:00 [INF] Executing RedirectResult, redirecting to /.
+2021-09-19 16:52:50.478 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Logout (SpatulaApi) in 1.5473ms
+2021-09-19 16:52:50.480 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Logout - - - 302 - - 6.6750ms
+2021-09-19 16:52:50.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-19 16:52:50.497 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-19 16:52:50.498 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-19 16:52:50.501 +02:00 [INF] Executed ViewResult - view Index executed in 3.1896ms.
+2021-09-19 16:52:50.501 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 3.688ms
+2021-09-19 16:52:50.502 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 5.3884ms
+2021-09-19 16:52:52.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Accounts/Login - -
+2021-09-19 16:52:52.797 +02:00 [INF] Route matched with {action = "Login", controller = "Accounts", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SpatulaApi.Controllers.AccountsController (SpatulaApi).
+2021-09-19 16:52:52.798 +02:00 [INF] Executing ViewResult, running view Login.
+2021-09-19 16:52:52.800 +02:00 [INF] Executed ViewResult - view Login executed in 2.2764ms.
+2021-09-19 16:52:52.800 +02:00 [INF] Executed action SpatulaApi.Controllers.AccountsController.Login (SpatulaApi) in 2.7804ms
+2021-09-19 16:52:52.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Accounts/Login - - - 200 - text/html;+charset=utf-8 4.4049ms

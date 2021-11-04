@@ -4,13 +4,13 @@
     ViewData["Title"] = "CourseLesson";
 }
 
-<h1>CourseLesson</h1>
+<h1>دروس الكورس</h1>
 
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.EnglishName)
+                @Html.DisplayNameFor(model => model.Warnings)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ArabicName)
@@ -18,30 +18,20 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Utensils)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Ingredients)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.VideoUrl)
-            </th>
+         
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.Order)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedBy)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.Course)
             </th>
+            <th></th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
@@ -49,7 +39,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.EnglishName)
+                @Html.DisplayFor(modelItem => item.Warnings)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ArabicName)
@@ -57,34 +47,24 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Utensils)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ingredients)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VideoUrl)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.Order)
             </td>
+            
             <td>
-                @Html.DisplayFor(modelItem => item.CreatedBy.Id)
+                @Html.DisplayFor(modelItem => item.Course.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Course.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">تعديل</a>
+            </td><td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">عرض التفاصيل</a>
+            </td><td>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">مسح</a>
             </td>
         </tr>
 }

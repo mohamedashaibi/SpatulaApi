@@ -21,11 +21,14 @@ namespace SpatulaApi.Areas.Identity.Pages.Account
         private readonly UserManager<ApiUser> _userManager;
         private readonly SignInManager<ApiUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly DatabaseContext _context;
 
-        public LoginModel(SignInManager<ApiUser> signInManager, 
+        public LoginModel(SignInManager<ApiUser> signInManager,
+            DatabaseContext context,
             ILogger<LoginModel> logger,
             UserManager<ApiUser> userManager)
         {
+            _context = context;
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
@@ -82,7 +85,7 @@ namespace SpatulaApi.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, false, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");

@@ -126,6 +126,27 @@ namespace SpatulaApi.Controllers.Api
 				return Unauthorized("Error");
 			}
 
+			if(userInfo.Email == null)
+			{
+				var user1 = await _userManager.FindByEmailAsync(userInfo.Name.Split(" ")[0] + userInfo.Name.Split(" ")[1] + "@yes.com");
+
+				if(user1 == null)
+				{
+					return BadRequest("User is not registered");
+				}
+
+				var usermapped1 = _mapper.Map<UserLoginDTO>(user1);
+
+				if (!await _authManager.ValidateFacebookUser(usermapped1))
+				{
+					return Unauthorized();
+				}
+
+				System.Diagnostics.Debug.WriteLine("mapping user ok");
+
+				return Accepted(new { Token = _authManager.CreateToken().Result, User = user1, FacebookUser = userInfo });
+			}
+
 			var user = await _userManager.FindByEmailAsync(userInfo.Email);
 
 			if (user == null)
@@ -143,7 +164,7 @@ namespace SpatulaApi.Controllers.Api
 
 			System.Diagnostics.Debug.WriteLine("mapping user");
 
-			return Accepted(new { Token = _authManager.CreateToken().Result, User = user });
+			return Accepted(new { Token = _authManager.CreateToken().Result, User = user, FacebookUser = userInfo });
 		}
 
 		[HttpPost]
@@ -159,9 +180,57 @@ namespace SpatulaApi.Controllers.Api
 
 			var userInfo = await _facebookAuth.GetUserInfoAsync(accessToken);
 
+			System.Diagnostics.Debug.WriteLine("Email=" + userInfo.Email + " Id" + userInfo.Id);
+
 			if (userInfo == null)
 			{
 				return Unauthorized("Error");
+			}
+
+			if(userInfo.Email == null)
+			{
+				//Login with phonenumber
+				var userPhone = await _userManager.FindByLoginAsync("Faceboook", accessToken);
+
+				if (userPhone != null)
+				{
+					return BadRequest("User already exists");
+				}
+				var userRegister1 = new ApiUser
+				{
+					Id = Guid.NewGuid().ToString(),
+					UserName = userInfo.Name.Split(" ")[0] + userInfo.Name.Split(" ")[1] + Guid.NewGuid().ToString(), 
+					FirstName = userInfo.Name.Split(" ")[0],
+					LastName = userInfo.Name.Split(" ")[1],
+					Email = userInfo.Name.Split(" ")[0]+ userInfo.Name.Split(" ")[1]+"@yes.com"
+				};
+				var userCreated1 = await _userManager.CreateAsync(userRegister1);
+
+
+				if (!userCreated1.Succeeded)
+				{
+					_logger.LogError("Something went wrong in the registration.");
+					string errors = "";
+					foreach (var item in userCreated1.Errors)
+					{
+						errors += item.Description + "//" + item.Code + "\n";
+					}
+					_logger.LogError(errors);
+
+					return BadRequest("Something went wrong when registering.");
+				}
+
+
+				await _userManager.AddToRoleAsync(userRegister1, "User");
+
+				var usermap1 = _mapper.Map<UserLoginDTO>(userRegister1);
+
+				if (!await _authManager.ValidateFacebookUser(usermap1))
+				{
+					return BadRequest();
+				}
+
+				return Accepted(new { Token = _authManager.CreateToken().Result, User = userRegister1, FacebookUser = userInfo });
 			}
 
 			var user = await _userManager.FindByEmailAsync(userInfo.Email);
@@ -207,7 +276,7 @@ namespace SpatulaApi.Controllers.Api
 				return BadRequest();
 			}
 
-			return Accepted(new { Token = _authManager.CreateToken().Result, User = userRegister });
+			return Accepted(new { Token = _authManager.CreateToken().Result, User = userRegister, FacebookUser = userInfo });
 		}
 
 		[Authorize()]

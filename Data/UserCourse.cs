@@ -26,7 +26,7 @@ namespace SpatulaApi.Data
 		public virtual ApiUser User { get; set; }
 		[DisplayName("الكورس")]
 		public virtual Course Course { get; set; }
-		[DisplayName("الدرس التواصل اليه")]
+		[DisplayName("الدرس الواصل اليه")]
 		public virtual Lesson LessonReached { get; set; }
 	}
 }

@@ -9,7 +9,7 @@ namespace SpatulaApi.Models
 	{
 		public int Id { get; set; }
 
-		public string EnglishName { get; set; }
+		public string Warnings { get; set; }
 
 		public string ArabicName { get; set; }
 
@@ -33,7 +33,7 @@ namespace SpatulaApi.Models
 	{
 		public int Id { get; set; }
 
-		public string EnglishName { get; set; }
+		public string Warnings { get; set; }
 
 		public string ArabicName { get; set; }
 
@@ -50,7 +50,7 @@ namespace SpatulaApi.Models
 	{
 		public int CourseId { get; set; }
 
-		public string EnglishName { get; set; }
+		public string Warnings { get; set; }
 
 		public string ArabicName { get; set; }
 
@@ -67,9 +67,6 @@ namespace SpatulaApi.Models
 	public class LessonDTO : CreateLessonDTO
 	{
 		public int Id { get; set; }
-
-		public int CourseId { get; set; }
-
 		public bool Status { get; set; }
 
 		public DateTime CreatedDate { get; set; }

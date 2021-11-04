@@ -45,10 +45,14 @@ namespace SpatulaApi
 				
 			});
 
-
 			services.AddAuthentication();
 
 			services.ConfigureIdentityServices();
+
+			services.AddDefaultIdentity<ApiUser>()
+				.AddRoles<IdentityRole>()
+				.AddDefaultUI()
+				.AddEntityFrameworkStores<DatabaseContext>();
 
 			services.ConfigureJWT(Configuration);
 
@@ -107,10 +111,7 @@ namespace SpatulaApi
 				  options.EnableEndpointRouting = false;
 			  });
 			
-			services.AddDefaultIdentity<ApiUser>()
-				.AddRoles<IdentityRole>()
-				.AddDefaultUI()
-				.AddEntityFrameworkStores<DatabaseContext>();
+			
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

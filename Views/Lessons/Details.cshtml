@@ -4,17 +4,16 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>تفاصيل الدرس</h1>
 
 <div>
-    <h4>Lesson</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EnglishName)
+            @Html.DisplayNameFor(model => model.Warnings)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EnglishName)
+            @Html.DisplayFor(model => model.Warnings)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ArabicName)
@@ -32,19 +31,38 @@
             @Html.DisplayNameFor(model => model.Utensils)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Utensils)
+            @if (Model.Utensils != null && Model.Utensils != "")
+            {
+                <ul>
+                    @foreach (var f in Model.Utensils.Split(','))
+                    {
+                        <li>@f</li>
+                    }
+            </ul>
+            }
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Ingredients)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Ingredients)
+               @if (Model.Ingredients != null && Model.Ingredients != "")
+            {
+                <ul>
+                    @foreach (var f in Model.Ingredients.Split(','))
+                    {
+                        <li>@f</li>
+                    }
+
+                </ul>
+            }
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.VideoUrl)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.VideoUrl)
+            <video src="@Model.VideoUrl" controls>
+                
+            </video>
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Status)
@@ -64,21 +82,16 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Order)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedBy)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedBy.Id)
-        </dd>
+       
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Course)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Course.Id)
+            @Html.DisplayFor(model => model.Course.Name)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">تعديل</a> 
+    <a asp-action="Index" class="btn btn-outline-success">العودة الى قائمة الدروس</a>
 </div>

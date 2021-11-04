@@ -1,0 +1,144 @@
+﻿@model SpatulaApi.Data.Review
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    main{
+  text-align: center;
+}
+img{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+h1{
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: #f592b1;
+}
+h3{
+  direction: rtl;
+  padding-bottom: 20px;
+}
+form{
+  width: 50%;
+  margin: 0 auto;
+}
+.btn{
+  width: 100%;
+ margin-bottom: 30px; 
+}
+form label{
+  width: 100%;
+}
+.control-label{
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+.radio-ok{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btn{
+  background: #f493b2;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+}
+</style>
+<img src="~/images/spatulawords.png"/>
+
+<h1>كيف وجدت التطبيق؟</h1>
+
+<h3>تقييم التطبيق*</h3>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create" asp-controller="Reviews" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AppSpeed" class="control-label"></label>
+                    <div class="radio-ok">
+                    <input type="radio" value="1" asp-for="AppSpeed"><label>ضعيف</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="2" asp-for="AppSpeed"><label>متوسط</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="3" asp-for="AppSpeed"><label>جيد</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="4" asp-for="AppSpeed"><label>ممتاز</label>
+                    </div>
+                <span asp-validation-for="AppSpeed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DownloadQuality" class="control-label"></label>
+                    <div class="radio-ok">
+                    <input type="radio" value="1" asp-for="DownloadQuality"><label>ضعيف</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="2" asp-for="DownloadQuality"><label>متوسط</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="3" asp-for="DownloadQuality"><label>جيد</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="4" asp-for="DownloadQuality"><label>ممتاز</label>
+                    </div>
+                <span asp-validation-for="DownloadQuality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentQuality" class="control-label"></label>
+                   <div class="radio-ok">
+                    <input type="radio" value="1" asp-for="PaymentQuality"><label>ضعيف</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="2" asp-for="PaymentQuality"><label>متوسط</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="3" asp-for="PaymentQuality"><label>جيد</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="4" asp-for="PaymentQuality"><label>ممتاز</label>
+                    </div>
+                <span asp-validation-for="PaymentQuality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EaseOfUse" class="control-label"></label>
+                    <div class="radio-ok">
+                    <input type="radio" value="1" asp-for="EaseOfUse"><label>ضعيف</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="2" asp-for="EaseOfUse"><label>متوسط</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="3" asp-for="EaseOfUse"><label>جيد</label>
+                    </div>
+                    <div class="radio-ok">
+                    <input type="radio" value="4" asp-for="EaseOfUse"><label>ممتاز</label>
+                    </div>
+                <span asp-validation-for="EaseOfUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notes" class="control-label"></label>
+                <textarea asp-for="Notes" class="form-control"></textarea>
+                <span asp-validation-for="Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="إرسال" class="btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

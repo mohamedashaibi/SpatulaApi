@@ -1,0 +1,104 @@
+﻿@model IEnumerable<SpatulaApi.Data.Review>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>قائمة التقييمات</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppSpeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DownloadQuality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentQuality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EaseOfUse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notes)
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @if(item.AppSpeed == 1){
+                <p>ضعيف</p>
+            }else if(item.AppSpeed == 2)
+            {
+                <p>متوسط</p>
+            }else if(item.AppSpeed == 3)
+            {
+                <p>جيد</p>
+            }else if(item.AppSpeed == 4)
+            {
+                <p>ممتاز</p>
+            }
+            </td>
+            <td>
+                @if(item.DownloadQuality == 1){
+                <p>ضعيف</p>
+            }else if(item.DownloadQuality == 2)
+            {
+                <p>متوسط</p>
+            }else if(item.DownloadQuality == 3)
+            {
+                <p>جيد</p>
+            }else if(item.DownloadQuality == 4)
+            {
+                <p>ممتاز</p>
+            }
+            </td>
+            <td>
+                   @if(item.PaymentQuality == 1){
+                <p>ضعيف</p>
+            }else if(item.PaymentQuality == 2)
+            {
+                <p>متوسط</p>
+            }else if(item.PaymentQuality == 3)
+            {
+                <p>جيد</p>
+            }else if(item.PaymentQuality == 4)
+            {
+                <p>ممتاز</p>
+            }
+            </td>
+            <td>
+                   @if(item.EaseOfUse == 1){
+                <p>ضعيف</p>
+            }else if(item.EaseOfUse == 2)
+            {
+                <p>متوسط</p>
+            }else if(item.EaseOfUse == 3)
+            {
+                <p>جيد</p>
+            }else if(item.EaseOfUse == 4)
+            {
+                <p>ممتاز</p>
+            }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">تعديل</a>
+                </td><td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">عرض التفاصيل</a> 
+                </td><td>    
+            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">مسح</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

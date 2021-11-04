@@ -85,7 +85,7 @@ namespace SpatulaApi.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create(CreateLessonDTO createLesson)
+		public async Task<IActionResult> Create(Lesson createLesson)
 		{
 			if (!IsLoggedIn())
 			{
@@ -96,18 +96,67 @@ namespace SpatulaApi.Controllers
 				return NotFound();
 			}
 
-			var map = _mapper.Map<Lesson>(createLesson);
+			
+			createLesson.CreatedDate = DateTime.Now;
 
-			map.CreatedDate = DateTime.Now;
+			var order = _context.Lessons.Where(l => l.CourseId == createLesson.CourseId).OrderBy(l=>l.Order).LastOrDefault();
 
-			var order = _context.Lessons.Where(l => l.CourseId == createLesson.CourseId).Count() + 1;
+			
 
-			map.Order = order;
-
-			_context.Lessons.Add(map);
+			createLesson.Order = order!=null?order.Order+1:1;
+			createLesson.Status = true;
+			_context.Lessons.Add(createLesson);
 			await _context.SaveChangesAsync();
 
 			return RedirectToAction(nameof(Index));
+		}
+
+		public async Task<IActionResult> Edit(int id)
+		{
+
+			if (!IsLoggedIn())
+			{
+				return RedirectToAction(nameof(Index), "Home", new { error = LoginError });
+			}
+
+			var lesson =_context.Lessons.Include(c=>c.Course).FirstOrDefault(c=>c.Id == id);
+
+			if (lesson == null)
+			{
+				return NotFound();
+			}
+			ViewData["CourseId"] = new SelectList(_context.Courses, "Id", "Name");
+			return View(lesson);
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Edit(Lesson lesson1)
+		{
+			if (!IsLoggedIn())
+			{
+				return RedirectToAction(nameof(Index), "Home", new { error = LoginError });
+			}
+			if (!ModelState.IsValid)
+			{
+				return View(lesson1);
+			}
+
+			var lesson = _context.Lessons.Find(lesson1.Id);
+
+			lesson.ArabicName = lesson1.ArabicName;
+			lesson.Warnings = lesson1.Warnings;
+			lesson.Ingredients = lesson1.Ingredients;
+			lesson.Utensils = lesson1.Utensils;
+			lesson.Description = lesson1.Description;
+			lesson.VideoUrl = lesson1.VideoUrl;
+			lesson.Status = lesson1.Status;
+
+			_context.Lessons.Update(lesson);
+
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction(nameof(Index));
+
 		}
 
 		private bool IsLoggedIn()

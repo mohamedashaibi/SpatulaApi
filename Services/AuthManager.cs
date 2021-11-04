@@ -79,7 +79,7 @@ namespace SpatulaApi.Services
 
 		public async Task<bool> ValidateUser(UserLoginDTO userDTO)
 		{
-			_user = await _userManager.FindByNameAsync(userDTO.Email);
+			_user = await _userManager.FindByEmailAsync(userDTO.Email);
 			return (_user != null && await _userManager.CheckPasswordAsync(_user, userDTO.Password));
 		}
 

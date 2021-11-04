@@ -4,6 +4,31 @@
     ViewData["Title"] = "Details";
 }
 <style>
+.lesson-list{
+ list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.lesson-list li{
+  direction: rtl;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid grey;
+  padding: 5px;
+}
+.images-div{
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around!important;
+}
+.images-div a{
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
     .course-images img{
   margin: 0 auto;
   width: 50%;
@@ -16,7 +41,19 @@
   width: 50%;
   float: right;
 }
-
+*{
+  text-align: center;
+}
+dl{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 70%;
+  margin: 0 auto!important;
+}
+dt, dd{
+  border-bottom: 1px solid grey;
+  height: 40px;
+}
 </style>
 
 <h1>تفاصيل الكورس</h1>
@@ -30,23 +67,7 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Picture)
-        </dt>
-        <dd class = "col-sm-10">
-            @if (Model.Picture != null)
-			{ 
-				var pictures = Model.Picture.Split(",");
-            
-            @foreach (var pic in pictures)
-			{
-                <div class="course-images">
-                <img src="~/images/@Model.Id/@pic"/>
-                <a asp-action="DeleteImage" asp-route-id="@pic" asp-route-courseid="@Model.Id">Delete image</a>
-                </div>
-			}
-				}
-        </dd>
+       
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Cost)
         </dt>
@@ -80,18 +101,7 @@
                 }
         </dd>
        
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UpdatedDate)
-        </dd>
+      
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Category)
         </dt>
@@ -102,8 +112,40 @@
     </dl>
 </div>
 
+<div class="images-div">
+         <p>   @Html.DisplayNameFor(model => model.Picture)</p>
+ 
+            @if (Model.Picture != "")
+			{ 
+				var pictures = Model.Picture.Split(",");
+            
+            @foreach (var pic in pictures)
+			{
+                <div class="course-images">
+                <img src="~/images/courses/@Model.Id/@pic"/>
+                <a asp-action="DeleteImage" asp-route-id="@pic" asp-route-courseid="@Model.Id">مسح الصورة</a>
+                </div>
+			}
+				}
+
+                </div>
 <div class="course-lessons">
-    
+    <h2>الدروس</h2>
+    @if(Model.Lessons == null)
+    {
+        <div class="alert alert-warning">
+            هذا الكورس لا يوجد به دروس
+        </div>
+    }
+    else
+    {
+        <ul class="lesson-list"> 
+        @foreach(var lesson in Model.Lessons)
+        {
+            <li>@lesson.ArabicName    <a asp-controller="Lessons" asp-action="Details" asp-route-id="@lesson.Id" class="btn btn-warning">عرض التفاصيل</a></li>
+        }
+        </ul>
+    }
 
 </div>
 

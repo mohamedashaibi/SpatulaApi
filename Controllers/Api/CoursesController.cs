@@ -86,6 +86,61 @@ namespace SpatulaApi.Controllers.Api
 			}
 		}
 
+
+		[HttpGet("addFreeCourse/{id:int}")]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+		public async Task<IActionResult> AddFreeCourse(int id)
+		{
+			if (GetUserId() == null)
+			{
+				return BadRequest("You are not logged in");
+			}
+			try
+			{
+				var user = await _unitOfWork.UserRepo.Get(u => u.Id == GetUserId());
+				if (user == null)
+				{
+					return BadRequest("You are not logged in");
+				}
+
+				var course = await _unitOfWork.CourseRepo.Get(c => c.Id == id);
+
+				if(course.Cost != 0) {
+					return BadRequest("This course is paid");
+				}
+
+				var courseExists = _unitOfWork.UserCourseRepo.GetWithMulti(new List<Expression<Func<UserCourse, bool>>> { c => c.UserId == GetUserId(), c => c.CourseId == id });
+				
+				if(courseExists != null)
+				{
+					return BadRequest("Course is already registered for this user");
+				}
+
+				var userCourse = new UserCourse
+				{
+					CourseId = id,
+					UserId = GetUserId(),
+					AddedDate = DateTime.Now
+				};
+
+				await _unitOfWork.UserCourseRepo.Create(userCourse);
+
+				await _unitOfWork.Save();
+
+				return Ok("Course Added");
+
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, $"Error occured in {nameof(GetUserCourses)}");
+				return StatusCode(500, "Internal server error");
+			}
+		}
+
+
+
 		[HttpGet("coursesWithCategory/{id:int}")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		[ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -102,15 +157,11 @@ namespace SpatulaApi.Controllers.Api
 					return BadRequest("Category not found");
 				}
 
-				var user = await _unitOfWork.UserRepo.Get(u => u.Id == GetUserId());
-				if (user == null)
-				{
-					return BadRequest("You are not logged in");
-				}
+				var courses = await _unitOfWork.CourseRepo.GetAll(u => u.CategoryId == category.Id);
+			
+				var coursesMap = _mapper.Map<IList<CourseDTO>>(courses);
 
-				var courses = await _unitOfWork.UserCourseRepo.GetAll(c => c.UserId == user.Id, null, new List<string> { "Course" });
-
-				return Ok(courses);
+				return Ok(coursesMap);
 
 			}
 			catch (Exception ex)
@@ -119,6 +170,58 @@ namespace SpatulaApi.Controllers.Api
 				return StatusCode(500, "Internal server error");
 			}
 		}
+
+		[HttpGet("freecourses")]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+		public async Task<IActionResult> GetFreeCourses()
+		{
+
+			try
+			{
+
+				var courses = await _unitOfWork.CourseRepo.GetWithMulti(new List<Expression<Func<Course, bool>>> { c => c.Category.EnglishName == "Free", c => c.Status == true });
+
+				var coursesMap = _mapper.Map<IList<GetCourseDTO>>(courses);
+
+				return Ok(coursesMap);
+
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, $"Error occured in {nameof(GetUserCourses)}");
+				return StatusCode(500, "Internal server error");
+			}
+		}
+
+
+
+		[HttpGet("paidcourses")]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+		public async Task<IActionResult> GetPaidCourses()
+		{
+
+			try
+			{
+
+				var courses = await _unitOfWork.CourseRepo.GetWithMulti(new List<Expression<Func<Course, bool>>> { c => c.Category.EnglishName == "Paid", c => c.Status == true });
+
+				var coursesMap = _mapper.Map<IList<GetCourseDTO>>(courses);
+
+				return Ok(coursesMap);
+
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, $"Error occured in {nameof(GetUserCourses)}");
+				return StatusCode(500, "Internal server error");
+			}
+		}
+
+
 
 
 		[HttpGet("{id:int}", Name = "GetCourse")]
@@ -141,12 +244,12 @@ namespace SpatulaApi.Controllers.Api
 				}
 
 
-				var hasCourse = await _unitOfWork.UserCourseRepo.GetWithMulti(new List<Expression<Func<UserCourse, bool>>> { u=>u.UserId == GetUserId(), u=>u.CourseId == course.Id});
+				//var hasCourse = await _unitOfWork.UserCourseRepo.GetWithMulti(new List<Expression<Func<UserCourse, bool>>> { u=>u.UserId == GetUserId(), u=>u.CourseId == course.Id});
 
-				if(hasCourse == null)
-				{
-					return BadRequest("You do not own this course");
-				}
+				//if(hasCourse == null)
+				//{
+				//	return BadRequest("You do not own this course");
+				//}
 
 				var courseMap = _mapper.Map<GetCourseDTO>(course);
 
@@ -160,132 +263,6 @@ namespace SpatulaApi.Controllers.Api
 			}
 		}
 
-		//[HttpPost]
-		//[ProducesResponseType(StatusCodes.Status200OK)]
-		//[ProducesResponseType(StatusCodes.Status400BadRequest)]
-		//[ProducesResponseType(StatusCodes.Status500InternalServerError)]
-		//public async Task<IActionResult> CreateCourse([FromBody] CreateCourseDTO courseDTO)
-		//{
-		//	if (!ModelState.IsValid)
-		//	{
-		//		_logger.LogError("Error in model when creating course");
-		//		return BadRequest("Invalid data");
-		//	}
-
-
-		//	try
-		//	{
-		//		var course = _mapper.Map<Course>(courseDTO);
-		//		course.Status = true;
-		//		await _unitOfWork.CourseRepo.Create(course);
-		//		await _unitOfWork.Save();
-
-		//		var courseMap = _mapper.Map<GetCourseDTO>(course);
-
-		//		if (courseDTO.Pictures != null)
-		//		{
-		//			string coursePhotoPath = Path.Combine(_hostingEnvironment.WebRootPath, "images/" + course.Id);
-		//			if (!Directory.Exists(coursePhotoPath))
-		//			{
-		//				Directory.CreateDirectory(coursePhotoPath);
-		//			}
-		//			foreach (var image in courseDTO.Pictures)
-		//			{
-
-		//				var title = DateTime.UtcNow.ToString("yyyy-MM-dd-HH-mm-ss-fff", CultureInfo.InvariantCulture) + ".jpg";
-
-		//				using (var stream = new FileStream(Path.Combine(coursePhotoPath, title), FileMode.Create))
-		//				{
-		//					image.CopyTo(stream);
-		//					course.Picture += "," + title;
-		//				}
-
-
-		//			}
-
-		//			_unitOfWork.CourseRepo.Update(course);
-		//			await _unitOfWork.Save();
-
-		//		}
-
-		//		return CreatedAtRoute("GetCourse", new { id = course.Id }, courseMap);
-
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		_logger.LogError(ex, $"There was an error in {nameof(GetCourse)}");
-		//		return StatusCode(500, "Internal server error");
-		//	}
-
-		//}
-
-		//[HttpPut("{id:int}")]
-		//[ProducesResponseType(StatusCodes.Status200OK)]
-		//[ProducesResponseType(StatusCodes.Status400BadRequest)]
-		//[ProducesResponseType(StatusCodes.Status500InternalServerError)]
-		//public async Task<IActionResult> UpdateCourse(int id, [FromBody] GetCourseDTO courseDTO)
-		//{
-		//	if (!ModelState.IsValid || id < 1)
-		//	{
-		//		return BadRequest("Invalid data");
-		//	}
-
-		//	try
-		//	{
-		//		var course = await _unitOfWork.CourseRepo.Get(c => c.Id == id);
-
-		//		if (course == null)
-		//		{
-		//			return BadRequest("No course found with this id");
-		//		}
-
-		//		var courseMap = _mapper.Map(courseDTO, course);
-
-		//		_unitOfWork.CourseRepo.Update(courseMap);
-
-		//		await _unitOfWork.Save();
-
-		//		return NoContent();
-
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		_logger.LogError(ex, $"There was an error in {nameof(GetCourse)}");
-		//		return StatusCode(500, "Internal server error");
-		//	}
-
-		//}
-
-		//[HttpDelete("{id:int}")]
-		//[ProducesResponseType(StatusCodes.Status200OK)]
-		//[ProducesResponseType(StatusCodes.Status400BadRequest)]
-		//[ProducesResponseType(StatusCodes.Status500InternalServerError)]
-		//public async Task<IActionResult> DeleteCourse(int id)
-		//{
-		//		try
-		//		{
-		//			var course = await _unitOfWork.CourseRepo.Get(c => c.Id == id);
-
-		//			if (course == null)
-		//			{
-		//				return BadRequest("No course found with this id");
-		//			}
-
-		//			course.Status = false;
-
-		//			_unitOfWork.CourseRepo.Update(course);
-
-		//			await _unitOfWork.Save();
-
-		//			return NoContent();
-
-		//		}
-		//		catch (Exception ex)
-		//		{
-		//			_logger.LogError(ex, $"There was an error in {nameof(GetCourse)}");
-		//			return StatusCode(500, "Internal server error");
-		//		}
-		//}
 
 		private string GetUserId()
 		{

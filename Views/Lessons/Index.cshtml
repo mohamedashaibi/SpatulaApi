@@ -21,7 +21,7 @@ h1,.btn{
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.EnglishName)
+                @Html.DisplayNameFor(model => model.Warnings)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ArabicName)
@@ -40,9 +40,6 @@ h1,.btn{
             </th>
            
             <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Order)
             </th>
            
@@ -51,14 +48,13 @@ h1,.btn{
             </th>
             <th></th>
             <th></th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr class="@(!item.Status?"alert-danger":null)">
             <td>
-                @Html.DisplayFor(modelItem => item.EnglishName)
+                @Html.DisplayFor(modelItem => item.Warnings)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ArabicName)
@@ -75,10 +71,7 @@ h1,.btn{
             <td>
                 @Html.DisplayFor(modelItem => item.VideoUrl)
             </td>
-           
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate.Date)
-            </td>
+         
             <td>
                 @Html.DisplayFor(modelItem => item.Order)
             </td>
@@ -86,13 +79,10 @@ h1,.btn{
                 @Html.DisplayFor(modelItem => item.Course.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">تعديل</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">تعديل</a>
                 </td><td>
-                <a asp-action="Details" asp-route-id="@item.Id">عرض التفاصيل</a> 
-                </td><td>
-               
-            <a asp-action="Delete" asp-route-id="@item.Id">مسح</a>
-            </td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">عرض التفاصيل</a> 
+                </td>
         </tr>
 }
     </tbody>

@@ -1,0 +1,26 @@
+2021-10-13 22:38:39.759 +02:00 [INF] Application started
+2021-10-13 22:38:43.941 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-10-13 22:38:45.075 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-13 22:38:45.076 +02:00 [INF] Hosting environment: Development
+2021-10-13 22:38:45.076 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-10-13 22:38:45.170 +02:00 [INF] Request starting HTTP/1.1 HEAD https://localhost:44345/ - -
+2021-10-13 22:38:45.170 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-10-13 22:38:45.554 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 388.3982ms
+2021-10-13 22:38:45.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-10-13 22:38:45.776 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-10-13 22:38:45.777 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 86.0805ms
+2021-10-13 22:38:45.805 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-10-13 22:38:45.857 +02:00 [INF] Executing ViewResult, running view Index.
+2021-10-13 22:38:45.925 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-10-13 22:38:45.926 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-10-13 22:38:45.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 2.0690ms
+2021-10-13 22:38:46.002 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-10-13 22:38:46.403 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 401.1620ms
+2021-10-13 22:38:47.158 +02:00 [INF] Executed ViewResult - view Index executed in 1313.0695ms.
+2021-10-13 22:38:47.162 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 1356.1244ms
+2021-10-13 22:38:47.167 +02:00 [INF] Request finished HTTP/1.1 HEAD https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 2003.6751ms
+2021-10-13 22:39:22.431 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Lessons/1 - -
+2021-10-13 22:39:22.468 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-10-13 22:39:22.475 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-10-13 22:39:22.478 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Lessons/1 - - - 401 - - 46.8727ms

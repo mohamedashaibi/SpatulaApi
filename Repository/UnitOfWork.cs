@@ -11,6 +11,7 @@ namespace SpatulaApi.Repository
 	{
 		private readonly DatabaseContext _context;
 		private IGenericRepository<Course> _courses;
+		private IGenericRepository<Advert> _adverts;
 		private IGenericRepository<Category> _categories;
 		private IGenericRepository<Lesson> _lessons;
 		private IGenericRepository<UserCourse> _userCourses;
@@ -29,6 +30,7 @@ namespace SpatulaApi.Repository
 		public IGenericRepository<UserCourse> UserCourseRepo => _userCourses ??= new GenericRepository<UserCourse>(_context);
 
 		public IGenericRepository<ApiUser> UserRepo => _user ??= new GenericRepository<ApiUser>(_context);
+		public IGenericRepository<Advert> AdvertRepo => _adverts ??= new GenericRepository<Advert>(_context);
 
 		public void Dispose()
 		{

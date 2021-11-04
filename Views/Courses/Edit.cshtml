@@ -1,8 +1,23 @@
-﻿@model SpatulaApi.Models.UpdateCourseDTO
+﻿@model SpatulaApi.Data.Course
 
 @{
     ViewData["Title"] = "Edit";
 }
+<style>
+.form-group{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+input, select{
+  text-align: center;
+}
+h1, .btn, a>btn{
+  width: 100%;
+  text-align: center;
+}    
+
+</style>
 
 <h1>تعديل بيانات الكورس</h1>
 
@@ -35,9 +50,7 @@
             </div>
             <div class="form-group form-check">
                  <label class="control-label" asp-for="Featured"></label>
-                <input class="form-check-input" asp-for="Featured" value="true"/> نعم 
-                <br />
-                <input class="form-check-input" asp-for="Featured" value="false"/> لا
+                <input class="form-check-input" asp-for="Featured"/>
             </div>
             <div class="form-group">
                 <input type="submit" value="حفظ" class="btn btn-primary" />

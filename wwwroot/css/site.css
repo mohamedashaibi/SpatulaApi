@@ -1,6 +1,12 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+#home img {
+    width: 100%;
+}
+body main {
+    min-height: 100vh !important;
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -98,3 +104,13 @@ body {
     .login-form .btn {
         width: 100%;
     }
+.footer {
+    color: white;
+    background: #444444;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    direction: rtl;
+}

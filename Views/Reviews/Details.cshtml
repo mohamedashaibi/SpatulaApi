@@ -1,0 +1,80 @@
+﻿@model SpatulaApi.Data.Review
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>عرض تفاصيل التقييم</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AppSpeed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppSpeed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DownloadQuality)
+        </dt>
+        <dd class = "col-sm-10">
+            @if(Model.DownloadQuality == 1){
+                <p>ضعيف</p>
+            }else if(Model.DownloadQuality == 2)
+            {
+                <p>متوسط</p>
+            }else if(Model.DownloadQuality == 3)
+            {
+                <p>جيد</p>
+            }else if(Model.DownloadQuality == 4)
+            {
+                <p>ممتاز</p>
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PaymentQuality)
+        </dt>
+        <dd class = "col-sm-10">
+        @if(Model.PaymentQuality == 1){
+                <p>ضعيف</p>
+            }else if(Model.PaymentQuality == 2)
+            {
+                <p>متوسط</p>
+            }else if(Model.PaymentQuality == 3)
+            {
+                <p>جيد</p>
+            }else if(Model.PaymentQuality == 4)
+            {
+                <p>ممتاز</p>
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EaseOfUse)
+        </dt>
+        <dd class = "col-sm-10">
+            @if(Model.EaseOfUse == 1){
+                <p>ضعيف</p>
+            }else if(Model.EaseOfUse == 2)
+            {
+                <p>متوسط</p>
+            }else if(Model.EaseOfUse == 3)
+            {
+                <p>جيد</p>
+            }else if(Model.EaseOfUse == 4)
+            {
+                <p>ممتاز</p>
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">تعديل</a> 
+    <a asp-action="Index" class="btn btn-outline-success">العودة الى قائمة التقييمات</a>
+</div>

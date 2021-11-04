@@ -9,7 +9,6 @@
 	<link rel="icon" href="~/images/spatula.jpeg"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="~/Font-Awesome-4.7/css/font-awesome.min.css" asp-append-version="true"/>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
 </head>
@@ -27,13 +26,31 @@
 					<ul class="navbar-nav flex-grow-1">
 						@if (Context.Session.GetString("UserId") != null)
 						{
+							
 							<li class="nav-item">
 								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
 							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="Index">الكورسات</a>
+							</li>
 							
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Accounts" asp-action="Logout">تسجيل الخروج</a>
+								<a class="nav-link text-dark" asp-area="" asp-controller="Lessons" asp-action="Index">الدروس</a>
 							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="UserCourses" asp-action="Index">دروس المستخدمين</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Adverts" asp-action="Index">الاعلانات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Reviews" asp-action="Index">التقييمات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-danger" asp-area="" asp-controller="Accounts" asp-action="Logout">تسجيل الخروج</a>
+							</li>
+						
 						}
 						else
 						{
@@ -45,7 +62,6 @@
 							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">سياية الخصوصية</a>
 						</li>
 					</ul>
-					<partial name="_LoginPartial" />
 				</div>
 			</div>
 		</nav>
@@ -57,11 +73,11 @@
 	</div>
 	<div class="text-center footer">
 		<div class="container">
-			&copy; 2021 - سباتولا - جميع الحقوق محفوظة للشيف حنان العابد<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+			&copy; جميع الحقوق محفوظة لسباتولا لصناعة الكيك والحلويات
 		</div>
 	</div>
-	<script src="~/lib/jquery/dist/jquery.min.js"></script>
-	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.min.js" asp-append-version="true"></script>
 
 	@await RenderSectionAsync("Scripts", required: false)
 </body>

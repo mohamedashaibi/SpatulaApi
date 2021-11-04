@@ -68,6 +68,11 @@ namespace SpatulaApi.Controllers
 
 			var map = _mapper.Map<Course>(courseDTO);
 
+			if(courseDTO.Cost == null)
+			{
+				map.Cost = 0;
+			}
+
 			map.CreatedDate = DateTime.Now;
 			map.Status = true;
 			await _unitOfWork.CourseRepo.Create(map);
@@ -171,9 +176,8 @@ namespace SpatulaApi.Controllers
 			{
 				return NotFound();
 			}
-			var map = _mapper.Map<UpdateCourseDTO>(course);
 			ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "ArabicName");
-			return View(map);
+			return View(course);
 		}
 
 		[HttpPost]
@@ -231,11 +235,11 @@ namespace SpatulaApi.Controllers
 			}
 			newPic = newPic.Replace(",,", ",");
 
-			if(newPic.ToCharArray().Last() == ',')
+			if(newPic.ToCharArray().LastOrDefault() == ',')
 			{
 				newPic = newPic.Remove(newPic.Length - 1, 1);
 			}
-			if (newPic.ToCharArray().First() == ',')
+			if (newPic.ToCharArray().FirstOrDefault() == ',')
 			{
 				newPic = newPic.Remove(0, 1);
 			}
@@ -252,6 +256,59 @@ namespace SpatulaApi.Controllers
 			await _context.SaveChangesAsync();
 
 			return RedirectToAction(nameof(Details), new { id = courseimage.Id });
+		}
+
+		public async Task<IActionResult> Delete(int id)
+		{
+			if (!IsLoggedIn())
+			{
+				return RedirectToAction(nameof(Index), "Home", new { error = LoginError });
+			}
+
+			var course = await _context.Courses.FindAsync(id);
+			if(course == null)
+			{
+				return NotFound();
+			}
+
+			return View(course);
+		}
+
+		[HttpPost, ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> DeleteConfirmed(int id)
+		{
+			if (!IsLoggedIn())
+			{
+				return RedirectToAction(nameof(Index), "Home", new { error = LoginError });
+			}
+			var course = await _context.Courses.FindAsync(id);
+			if(course == null)
+			{
+				return NotFound();
+			}
+			course.Status = false;
+			_context.Courses.Update(course);
+			await _context.SaveChangesAsync();
+			return RedirectToAction(nameof(Index));
+		}
+
+		[HttpGet]
+		public async Task<IActionResult> UnDelete(int id)
+		{
+			if (!IsLoggedIn())
+			{
+				return RedirectToAction(nameof(Index), "Home", new { error = LoginError });
+			}
+			var course = await _context.Courses.FindAsync(id);
+			if (course == null || course.Status == true)
+			{
+				return NotFound();
+			}
+			course.Status = true;
+			_context.Courses.Update(course);
+			await _context.SaveChangesAsync();
+			return RedirectToAction(nameof(Index));
 		}
 
 		private bool IsLoggedIn()

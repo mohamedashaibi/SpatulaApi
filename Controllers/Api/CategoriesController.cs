@@ -15,6 +15,7 @@ using SpatulaApi.Models;
 
 namespace SpatulaApi.Controllers.Api
 {
+	[Authorize()]
 	[Route("api/[controller]")]
 	[ApiController]
 	public class CategoriesController : ControllerBase
@@ -31,7 +32,7 @@ namespace SpatulaApi.Controllers.Api
 			_mapper = mapper;
 		}
 
-		[Authorize()]
+		//[Authorize()]
 		[HttpGet]
 		public async Task<IActionResult> GetAllCategories()
 		{
@@ -46,7 +47,7 @@ namespace SpatulaApi.Controllers.Api
 				return StatusCode(500, "We have encountered a problem, please try again later.");
 			}
 		}
-		[Authorize()]
+		//[Authorize()]
 		[HttpGet("{id:int}", Name = "GetCategory")]
 		public async Task<IActionResult> GetCategory(int id)
 		{

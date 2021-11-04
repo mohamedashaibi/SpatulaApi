@@ -1,0 +1,79 @@
+2021-09-21 16:08:52.725 +02:00 [INF] Application started
+2021-09-21 16:08:56.978 +02:00 [INF] User profile is available. Using 'C:\Users\moh_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-21 16:08:57.638 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-21 16:08:57.639 +02:00 [INF] Hosting environment: Development
+2021-09-21 16:08:57.639 +02:00 [INF] Content root path: C:\Users\moh_a\source\repos\Api\SpatulaApi
+2021-09-21 16:08:57.690 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/ - -
+2021-09-21 16:08:58.016 +02:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller SpatulaApi.Controllers.HomeController (SpatulaApi).
+2021-09-21 16:08:58.061 +02:00 [INF] Executing ViewResult, running view Index.
+2021-09-21 16:08:58.337 +02:00 [INF] Executed ViewResult - view Index executed in 285.081ms.
+2021-09-21 16:08:58.340 +02:00 [INF] Executed action SpatulaApi.Controllers.HomeController.Index (SpatulaApi) in 322.2989ms
+2021-09-21 16:08:58.355 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/ - - - 200 - text/html;+charset=utf-8 668.7606ms
+2021-09-21 16:08:58.417 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - -
+2021-09-21 16:08:58.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - -
+2021-09-21 16:08:58.427 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - -
+2021-09-21 16:08:58.429 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - -
+2021-09-21 16:08:58.432 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css - -
+2021-09-21 16:08:58.433 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatula.jpeg - -
+2021-09-21 16:08:58.436 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/css/templatemo-style.css - -
+2021-09-21 16:08:58.445 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/images/spatulapng.png - -
+2021-09-21 16:08:58.445 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-09-21 16:08:58.447 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\css\site.css'
+2021-09-21 16:08:58.447 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-09-21 16:08:58.447 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/css/font-awesome.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\css\font-awesome.min.css'
+2021-09-21 16:08:58.447 +02:00 [INF] Sending file. Request path: '/css/templatemo-style.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\css\templatemo-style.css'
+2021-09-21 16:08:58.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/templatemo-style.css - - - 0 7768 text/css 11.9861ms
+2021-09-21 16:08:58.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0 - - - 0 31000 text/css 30.5456ms
+2021-09-21 16:08:58.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css?v=rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm-224CacZs - - - 0 155764 text/css 18.8294ms
+2021-09-21 16:08:58.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/css/site.css?v=fjpudqNhF1DbCcOzlP9n0U0t9IQqZovGR8sgye0iq4s - - - 0 2049 text/css 21.3178ms
+2021-09-21 16:08:58.448 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-09-21 16:08:58.449 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155764 text/css 3.7587ms
+2021-09-21 16:08:58.450 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2021-09-21 16:08:58.450 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/lib/bootstrap/dist/css/bootstrap.css?v=eEx7gvq-uEM0o4kUBiy_-Mxl6rHH9NQ9UzRBWHe9mXg - - - 0 202385 text/css 28.6031ms
+2021-09-21 16:08:58.453 +02:00 [INF] Sending file. Request path: '/Font-Awesome-4.7/css/font-awesome.min.css'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\Font-Awesome-4.7\css\font-awesome.min.css'
+2021-09-21 16:08:58.454 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/Font-Awesome-4.7/css/font-awesome.min.css - - - 200 31000 text/css 22.0097ms
+2021-09-21 16:08:58.467 +02:00 [INF] Sending file. Request path: '/images/spatulapng.png'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\images\spatulapng.png'
+2021-09-21 16:08:58.467 +02:00 [INF] Sending file. Request path: '/images/spatula.jpeg'. Physical path: 'C:\Users\moh_a\source\repos\Api\SpatulaApi\wwwroot\images\spatula.jpeg'
+2021-09-21 16:08:58.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatula.jpeg - - - 200 19222 image/jpeg 40.5372ms
+2021-09-21 16:08:58.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/images/spatulapng.png - - - 200 72105 image/png 28.4216ms
+2021-09-21 16:09:06.375 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/ - -
+2021-09-21 16:09:06.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/ - - - 301 - - 2.0213ms
+2021-09-21 16:09:06.396 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/index.html - -
+2021-09-21 16:09:06.533 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/index.html - - - 200 - text/html;charset=utf-8 136.5443ms
+2021-09-21 16:09:06.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - -
+2021-09-21 16:09:06.595 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-21 16:09:06.595 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/swagger-ui.css - - - 0 142933 text/css 3.4660ms
+2021-09-21 16:09:06.747 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - -
+2021-09-21 16:09:06.749 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-09-21 16:09:06.749 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/favicon-16x16.png - - - 0 665 image/png 1.8638ms
+2021-09-21 16:09:06.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - -
+2021-09-21 16:09:07.093 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.8134ms
+2021-09-21 16:09:15.716 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44345/api/Account/facebooklogin?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - -
+2021-09-21 16:09:15.730 +02:00 [INF] Executing endpoint 'SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi)'
+2021-09-21 16:09:15.757 +02:00 [INF] Route matched with {action = "LoginFacebook", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginFacebook(System.String) on controller SpatulaApi.Controllers.Api.AccountController (SpatulaApi).
+2021-09-21 16:09:16.455 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-09-21 16:09:16.458 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/debug_token?input_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD&access_token=503611874397394|a704cac1e92bf9c748f6bee2664cda59"
+2021-09-21 16:09:17.834 +02:00 [INF] Received HTTP response headers after 1367.1206ms - 200
+2021-09-21 16:09:17.836 +02:00 [INF] End processing HTTP request after 1382.5981ms - 200
+2021-09-21 16:09:18.077 +02:00 [INF] Start processing HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-09-21 16:09:18.077 +02:00 [INF] Sending HTTP request GET "https://graph.facebook.com/me?fields=id,name,email,picture&access_token=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD"
+2021-09-21 16:09:18.489 +02:00 [INF] Received HTTP response headers after 411.4595ms - 200
+2021-09-21 16:09:18.489 +02:00 [INF] End processing HTTP request after 412.0603ms - 200
+2021-09-21 16:09:20.304 +02:00 [INF] Entity Framework Core 5.0.8 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: DetailedErrorsEnabled 
+2021-09-21 16:09:29.295 +02:00 [INF] Executed DbCommand (165ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-21 16:09:29.571 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-21 16:09:29.719 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-09-21 16:09:29.950 +02:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[SpatulaApi.Data.ApiUser, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SpatulaApi.ExternalContract.FacebookUserInfoResult, SpatulaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-21 16:09:30.097 +02:00 [INF] Executed action SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi) in 14339.8949ms
+2021-09-21 16:09:30.098 +02:00 [INF] Executed endpoint 'SpatulaApi.Controllers.Api.AccountController.LoginFacebook (SpatulaApi)'
+2021-09-21 16:09:30.108 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44345/api/Account/facebooklogin?accessToken=EAAHKCEbgzNIBACdZAJwoJgWum260kR3ZBETLhZBgEXXUwew1SSPbF9zCi76IAEToc6zc374TjxOGUZCuubxB9LJmbcb11a8sXd0DZBasQzQkdkytNQUNZBhPPNevYnyyrlVPrwLlIBoKJaZBHUzC6uUmr4NxqDrxZBXjrjZC0eI4e74vjbRGMgBtkRuxm7JiqIJDAQkTZAADcn63v46XfnqWAFR57x8bkk70x2IqGYJPPKTQZDZD - - - 202 1530 application/json;+charset=utf-8 14391.9553ms

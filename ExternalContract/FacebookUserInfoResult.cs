@@ -21,6 +21,7 @@ namespace SpatulaApi.ExternalContract
 
             [JsonProperty("picture")]
             public FacebookPicture Picture { get; set; }
+
         }
 
         public partial class FacebookPicture

@@ -83,12 +83,19 @@
                 @Html.DisplayFor(modelItem => item.Category.ArabicName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">تعديل</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">تعديل</a>
                 </td><td>
-                <a asp-action="Details" asp-route-id="@item.Id">عرض التفاصيل</a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">عرض التفاصيل</a> 
                 </td><td>
-               
-            <a asp-action="Delete" asp-route-id="@item.Id">مسح</a>
+                    @if (item.Status == true)
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">مسح</a>
+                    }
+                    else
+                    {
+                        <a asp-action="UnDelete" asp-route-id="@item.Id" class="btn btn-warning">استرجاع</a>
+
+                    }
             </td>
         </tr>
 }

@@ -11,8 +11,8 @@ namespace SpatulaApi.Data
 	{
 		[DisplayName("رقم الدرس")]
 		public int Id { get; set; }
-		[DisplayName("الاسم بالانجليزي")]
-		public string EnglishName { get; set; }
+		[DisplayName("تحذيرات")]
+		public string Warnings { get; set; }
 		[DisplayName("الاسم بالعربي")]
 		public string ArabicName { get; set; }
 		[DisplayName("الوصف")]

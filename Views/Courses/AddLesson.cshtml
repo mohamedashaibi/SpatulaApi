@@ -1,4 +1,4 @@
-﻿@model SpatulaApi.Models.CreateLessonDTO
+﻿@model SpatulaApi.Data.Lesson
 
 @{
     ViewData["Title"] = "AddLesson";
@@ -12,15 +12,15 @@
     <div class="col-md-12">
 		<form method="post" asp-controller="Lessons" asp-action="Create">
 			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<div class="form-group" >
+			<div class="form-group" hidden>
 				<label asp-for="CourseId" class="control-label"></label>
 				<input asp-for="CourseId" class="form-control" value="@courseid"/>
 				<span asp-validation-for="CourseId" class="text-danger"></span>
 			</div>
 			<div class="form-group">
-				<label asp-for="EnglishName" class="control-label"></label>
-				<input asp-for="EnglishName" class="form-control" />
-				<span asp-validation-for="EnglishName" class="text-danger"></span>
+				<label asp-for="Warnings" class="control-label"></label>
+				<input asp-for="Warnings" class="form-control" />
+				<span asp-validation-for="Warnings" class="text-danger"></span>
 			</div>
 			<div class="form-group">
 				<label asp-for="ArabicName" class="control-label"></label>
@@ -47,11 +47,7 @@
 				<input asp-for="VideoUrl" class="form-control" />
 				<span asp-validation-for="VideoUrl" class="text-danger"></span>
 			</div>
-			<div class="form-group">
-				<label asp-for="Order" class="control-label"></label>
-				<input asp-for="Order" class="form-control" />
-				<span asp-validation-for="Order" class="text-danger"></span>
-			</div>
+			
 			<div class="form-group">
 				<input type="submit" value="إضافة" class="btn btn-primary" />
 			</div>
@@ -60,7 +56,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">العودة الى قائمة الدروس</a>
+    <a asp-action="Index" class="btn btn-success-outline">العودة الى قائمة الدروس</a>
 </div>
 
 @section Scripts {
